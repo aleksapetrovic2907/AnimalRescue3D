@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9123986931897990787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9123986932988584875}
   - component: {fileID: 9123986932988584874}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: 1_Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
