@@ -14,6 +14,7 @@ namespace Aezakmi
         { Box, Sphere }
 
         public Color gizmosColor = Color.red;
+        public bool drawGizmos = false;
         [SerializeField] private BuilderType builderType;
 
         [Tooltip("Deletes all previously generated objects when generating new.")]
@@ -78,8 +79,8 @@ namespace Aezakmi
 
         private void DeleteOldBuilds()
         {
-            if(m_previouslySpawnedObjects.Count == 0) return;
-            
+            if (m_previouslySpawnedObjects.Count == 0) return;
+
             foreach (var obj in m_previouslySpawnedObjects)
                 DestroyImmediate(obj.gameObject);
         }
@@ -88,6 +89,8 @@ namespace Aezakmi
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
+            if (!drawGizmos) return;
+
             Gizmos.color = gizmosColor;
 
             if (builderType == BuilderType.Box)
