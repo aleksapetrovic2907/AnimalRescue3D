@@ -1,5 +1,6 @@
 using UnityEngine;
 using Aezakmi.LeashBehaviours;
+using NaughtyAttributes;
 
 namespace Aezakmi.Animals
 {
@@ -93,6 +94,13 @@ namespace Aezakmi.Animals
             _isPartOfWave = true;
             var waveBehaviour = gameObject.AddComponent<WaveBehaviour>();
             waveBehaviour.SetDestination(pos);
+        }
+        
+        [Button]
+        private void SetTransforms()
+        {
+            neckBand = GameObject.Find("NeckbandAttachment").transform;
+            topOfHead = GameObject.Find("TopOfHead").transform;
         }
     }
 }

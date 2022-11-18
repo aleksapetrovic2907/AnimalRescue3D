@@ -11,7 +11,9 @@ namespace Aezakmi
         private const int MAX_FAILED_SEARCHES = 10;
 
         [Header("Initial Spawn Data")]
-        [SerializeField] private SerializableDictionary<GameObject, int> initialAnimals;
+        [SerializeField] private SerializableDictionary<GameObject, int> initialAnimalsSmall;
+        [SerializeField] private SerializableDictionary<GameObject, int> initialAnimalsMedium;
+        [SerializeField] private SerializableDictionary<GameObject, int> initialAnimalsLarge;
         [SerializeField] private SpawnerType spawnerType;
         [ShowIf("spawnerType", SpawnerType.Sphere)] public float radius;
         [ShowIf("spawnerType", SpawnerType.Box)] public Vector3 size;
@@ -20,17 +22,36 @@ namespace Aezakmi
 
         private float m_spawnHeight = 0;
 
+        private static float s_smallScale = 1;
+        private static float s_mediumScale = 1.25f;
+        private static float s_largeScale = 1.5f;
+
         private void Start() => SpawnInitialAnimals();
 
         public void SpawnInitialAnimals()
         {
-            foreach (var animalData in initialAnimals)
-            {
+            foreach (var animalData in initialAnimalsSmall)
                 for (int i = 0; i < animalData.Value.Value; i++)
                 {
-                    Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
+                    var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
+                    animal.transform.localScale = s_smallScale * Vector3.one;
                 }
-            }
+
+            foreach (var animalData in initialAnimalsMedium)
+                for (int i = 0; i < animalData.Value.Value; i++)
+                {
+                    var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
+                    animal.transform.localScale = s_mediumScale * Vector3.one;
+                }
+
+            foreach (var animalData in initialAnimalsLarge)
+                for (int i = 0; i < animalData.Value.Value; i++)
+                {
+                    var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
+                    animal.transform.localScale = s_largeScale * Vector3.one;
+                    Debug.Log(animal.transform.localScale);
+                }
+
         }
 
         private Vector3 RandomPosition()
@@ -54,7 +75,7 @@ namespace Aezakmi
                 randPosition += transform.position;
                 nearestNode = AstarPath.active.GetNearest(randPosition).node;
             } while (!nearestNode.Walkable);
-            
+
             targetPosition = (Vector3)nearestNode.position;
             return targetPosition;
         }
