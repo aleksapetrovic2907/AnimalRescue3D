@@ -1,31 +1,13 @@
-using UnityEngine;
-using NaughtyAttributes;
-
 namespace Aezakmi
 {
-    public class GameData : SingletonBase<GameData>
+    [System.Serializable]
+    public class GameData
     {
-        public int levelReached;
-        public bool firstTimePlaying;
+        public int levelReached = 1;
+        public bool firstTimePlaying = true;
 
-        protected override void Awake()
-        {
-            base.Awake();
-            LoadGameData();
-        }
-
-        private void LoadGameData()
-        {
-            levelReached = PlayerPrefs.GetInt("levelReached", 1);
-            firstTimePlaying = PlayerPrefsExtra.GetBool("firstTimePlaying", true);
-        }
-
-        private void SaveGameData()
-        {
-            PlayerPrefs.SetInt("levelReached", levelReached);
-        }
-
-        [Button]
-        private void DeleteAllData() => PlayerPrefs.DeleteAll();
+        // Player related
+        public float distanceTravelled = 0f;
+        public int upgradesBought = 0;
     }
 }

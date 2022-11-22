@@ -8,7 +8,12 @@ namespace Aezakmi.Animals
         [SerializeField] private float radius;
         [SerializeField] private bool drawGizmos;
 
-        private AIPath _aiPath;
+        private AIPath m_aiPath;
+        private float m_timer = 0f;
+        private Vector3 m_lastCheckedPosition;
+        private float m_maxStuckDistance; // If animal travelled distance less than this, it's stuck.
+
+        private const float TIME_BEFORE_CHECK_IF_STUCK = 1f;
 
         public const float NODE_SIZE = 1f;
         public const int UNWANDERABLE_TAG_INDEX = 1;
@@ -19,17 +24,39 @@ namespace Aezakmi.Animals
 
         private void Start()
         {
-            _aiPath = GetComponent<AIPath>();
+            m_aiPath = GetComponent<AIPath>();
+            m_lastCheckedPosition = transform.position;
+            m_maxStuckDistance = m_aiPath.maxSpeed * TIME_BEFORE_CHECK_IF_STUCK * .5f;
             MoveToRandomPoint();
+            m_aiPath.SearchPath();
         }
 
         private void Update()
         {
-            if (!_aiPath.pathPending && (_aiPath.reachedEndOfPath || !_aiPath.hasPath))
+            m_timer += Time.deltaTime;
+
+            if (m_timer >= TIME_BEFORE_CHECK_IF_STUCK)
+            {
+                m_timer = 0f;
+                CheckIfStuck();
+            }
+
+            if (!m_aiPath.pathPending && (m_aiPath.reachedEndOfPath || !m_aiPath.hasPath))
             {
                 MoveToRandomPoint();
-                _aiPath.SearchPath();
+                m_aiPath.SearchPath();
             }
+        }
+
+        private void CheckIfStuck()
+        {
+            if (Vector3.Distance(transform.position, m_lastCheckedPosition) <= m_maxStuckDistance)
+            {
+                MoveToRandomPoint();
+                m_aiPath.SearchPath();
+            }
+
+            m_lastCheckedPosition = transform.position;
         }
 
         private Vector3 RandomPosition(Vector3 origin, float radius)
@@ -42,7 +69,7 @@ namespace Aezakmi.Animals
                 randPosition = (Random.insideUnitSphere * radius) + transform.position;
                 var nearestNode = AstarData.active.GetNearest(randPosition).node;
 
-                if (nearestNode.Walkable)
+                if (nearestNode.Walkable && nearestNode.Tag != WAVEAREA_TAG_INDEX)
                 {
                     targetPosition = (Vector3)nearestNode.position;
                     break;
@@ -57,8 +84,8 @@ namespace Aezakmi.Animals
             return targetPosition;
         }
 
-        public void StopWandering() => _aiPath.isStopped = true;
-        private void MoveToRandomPoint() => _aiPath.destination = RandomPosition(transform.position, radius);
+        public void StopWandering() => m_aiPath.isStopped = true;
+        private void MoveToRandomPoint() => m_aiPath.destination = RandomPosition(transform.position, radius);
 
 #if UNITY_EDITOR
         private void OnDrawGizmos()

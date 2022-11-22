@@ -2979,6 +2979,7 @@ GameObject:
   - component: {fileID: 98927993515221749}
   - component: {fileID: 7556140122584012926}
   - component: {fileID: 4405692939411153337}
+  - component: {fileID: 1015778693862958904}
   m_Layer: 5
   m_Name: FPS_Text_UI
   m_TagString: Untagged
@@ -3104,6 +3105,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1015778693862958904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704260085608835396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de8321f0b8ae190459d85518bd36b118, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6926738146876514558
 GameObject:
   m_ObjectHideFlags: 0
