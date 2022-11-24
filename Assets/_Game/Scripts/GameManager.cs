@@ -16,13 +16,6 @@ namespace Aezakmi
         private void Start()
         {
             // Load Game Data
-            ScaleLevel();
-        }
-
-        private void ScaleLevel()
-        {
-            foreach (var t in m_transformsThatScaleWithLevel)
-                t.localScale = GetLevelSize() * Vector3.one;
         }
     }
 }

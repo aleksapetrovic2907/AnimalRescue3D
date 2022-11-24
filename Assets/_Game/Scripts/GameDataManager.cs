@@ -1,6 +1,8 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using NaughtyAttributes;
 using Aezakmi.AchievementSystem;
 
 namespace Aezakmi
@@ -19,6 +21,7 @@ namespace Aezakmi
             // Since achievements' predicates (requirements) depend on gameData
             // we first initialize the game data and then the achievement data
             AchievementsManager.Instance.LoadAchievements();
+            SceneManager.LoadScene(1);
         }
 
         private void OnApplicationQuit() => SaveGameData();
@@ -36,11 +39,29 @@ namespace Aezakmi
 
         public void SaveGameData()
         {
+            for (int i = 0; i < AchievementsManager.Instance.achievements.Count; i++)
+                gameData.claimedList[i] = AchievementsManager.Instance.achievements[i].claimed;
+
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Create(Application.persistentDataPath + SAVEDATA_FILE_NAME);
             bf.Serialize(fs, gameData);
             fs.Close();
         }
+
+#if UNITY_EDITOR
+        [Button]
+        private void DeleteData()
+        {
+            var location = Application.persistentDataPath + SAVEDATA_FILE_NAME;
+            if (!File.Exists(location))
+            {
+                Debug.LogError($"File at {location} cannot be deleted as it does not exist.");
+                return;
+            }
+
+            File.Delete(location);
+        }
+#endif
         #endregion
     }
 }

@@ -1,3 +1,5 @@
+using Aezakmi.AchievementSystem;
+
 namespace Aezakmi
 {
     [System.Serializable]
@@ -9,5 +11,8 @@ namespace Aezakmi
         // Player related
         public float distanceTravelled = 0f;
         public int upgradesBought = 0;
+
+        // Achievements
+        public bool[] claimedList = new bool[AchievementsManager.ACHIEVEMENTS_COUNT];
     }
 }

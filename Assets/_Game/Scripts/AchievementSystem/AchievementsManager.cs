@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Aezakmi.AchievementSystem
 {
@@ -13,16 +14,19 @@ namespace Aezakmi.AchievementSystem
                 if (!achievement.achieved)
                 {
                     achievement.UpdateStatus();
-
-                    if (achievement.achieved)
-                        AchievementUnlocked(achievement);
                 }
             }
         }
 
-        public void AchievementUnlocked(Achievement achievement)
+        public void AchievementClaimed(Achievement achievement)
         {
-            // gems += achievement.gemBonus;
+            achievement.claimed = true;
+
+            foreach (var test in achievements)
+            {
+                if(test.claimed == true)
+                    Debug.LogWarning("Works.");
+            }
         }
     }
 }

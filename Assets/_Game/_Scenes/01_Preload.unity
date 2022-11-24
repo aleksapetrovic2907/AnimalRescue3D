@@ -172,6 +172,7 @@ MonoBehaviour:
     firstTimePlaying: 1
     distanceTravelled: 0
     upgradesBought: 0
+    claimedList: 00000000
 --- !u!1 &767081233
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ namespace Aezakmi.AchievementSystem
         public string title;
         public string description;
         public bool achieved = false;
+        public bool claimed = false;
         public int gemBonus; // Amount of gems earned by achieving achievement
         public Predicate<object> requirements;
         public Func<float> percentage;
