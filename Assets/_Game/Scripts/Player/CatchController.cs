@@ -41,7 +41,7 @@ namespace Aezakmi.Player
                 {
                     m_playerController.AnimalCaught();
                     PutAnimalOnLeash(animal.transform.parent);
-                    // ! EventManager.TriggerEvent(GameEvents.AnimalCaptured, new Dictionary<string, object> { { "animal", animal.transform.parent } });
+                    EventManager.TriggerEvent(GameEvents.AnimalCaptured, new Dictionary<string, object> { { "animal", animal.transform.parent } });
                 }
             }
         }

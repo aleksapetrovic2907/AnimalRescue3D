@@ -69,7 +69,8 @@ namespace Aezakmi.Player
             var moveAmount = transform.forward * TotalMovementSpeed * Time.deltaTime;
             m_characterController.Move(moveAmount);
 
-            GameDataManager.Instance.gameData.distanceTravelled += (Mathf.Abs(moveAmount.x) + Mathf.Abs(moveAmount.z)) * MOVE_MODIFIER_CONST;
+            if (GameDataManager.Instance != null)
+                GameDataManager.Instance.gameData.distanceTravelled += (Mathf.Abs(moveAmount.x) + Mathf.Abs(moveAmount.z)) * MOVE_MODIFIER_CONST;
         }
 
         public void ChangeVehicle(int speedLevel, bool hasUpgraded)

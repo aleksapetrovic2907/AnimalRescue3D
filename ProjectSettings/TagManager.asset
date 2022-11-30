@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FreeAnimal
+  - CaughtAnimal
+  - RescuedAnimal
+  - AnimalCollider
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - AnimalCollider
   - Money
   - MapSphere
-  - 
+  - Animals
   - 
   - 
   - 
