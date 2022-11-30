@@ -27,7 +27,6 @@ namespace Aezakmi.AchievementSystem.UI
 
         private void LoadMenu()
         {
-            Debug.Log("Achievements count: " + AchievementsManager.Instance.achievements.Count);
             for (int i = 0; i < AchievementsManager.Instance.achievements.Count; i++)
             {
                 var ach = Instantiate(achievementPrefab, achievementsParent).GetComponent<AchievementUI>();
@@ -36,7 +35,6 @@ namespace Aezakmi.AchievementSystem.UI
                 ach.claimButton.onClick.AddListener(delegate { AchievementsManager.Instance.AchievementClaimed(AchievementsManager.Instance.achievements[index]); UpdateMenu(); });
                 achievementUIs.Add(ach);
             }
-            Debug.Log("Added achievements sum: " + achievementUIs.Count.ToString());
         }
 
         [Button]

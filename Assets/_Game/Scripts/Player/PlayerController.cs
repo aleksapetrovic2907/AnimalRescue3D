@@ -9,16 +9,16 @@ namespace Aezakmi.Player
         public int MaximumCaught;
         public bool IsFull { get { return CurrentCaught >= MaximumCaught; } private set { } }
 
-        [SerializeField] private GameObject FullIndicator;
-        [SerializeField] private GameObject ShelterIndicator;
-        [SerializeField] private GameObject NewLevelIndicator;
+        [SerializeField] private GameObject fullIndicator;
+        [SerializeField] private GameObject shelterIndicator;
+        [SerializeField] private GameObject newLevelIndicator;
+        [SerializeField] private GameObject upgradeIndicator;
 
         private CatchController _catchController;
         private PlayerMovement _playerMovement;
         private PlayerAnimatorController _playerAnimatorController;
 
-        // ! private void OnEnable() => EventManager.StartListening(GameEvents.LevelFinished, StopMoving);
-        // ! private void OnDisable() => EventManager.StopListening(GameEvents.LevelFinished, StopMoving);
+        private bool m_moneyWasThrown = false;
 
         private void Start()
         {
@@ -30,6 +30,7 @@ namespace Aezakmi.Player
         private void Update()
         {
             _catchController.enabled = CurrentCaught < MaximumCaught;
+            CheckForUpgradeIndicator();
         }
 
         public void AnimalCaught()
@@ -44,25 +45,36 @@ namespace Aezakmi.Player
             ToggleFullIndicator();
         }
 
+        #region Indicators
         public void ToggleFullIndicator()
         {
-            FullIndicator.SetActive(IsFull);
-            ShelterIndicator.SetActive(IsFull);
+            fullIndicator.SetActive(IsFull);
+            shelterIndicator.SetActive(IsFull);
         }
 
         public void ToggleNewLevelIndicator()
         {
-            NewLevelIndicator.SetActive(!NewLevelIndicator.activeSelf);
+            newLevelIndicator.SetActive(!newLevelIndicator.activeSelf);
         }
 
-        private void StopMoving(Dictionary<string, object> message)
+        public void CheckForUpgradeIndicator()
         {
-            // Happens when level finishes
-            _playerMovement.BaseMovementSpeed = 0f;
-            _playerMovement.enabled = false;
+            // todo: must also require that player has enough money for an upgrade
 
-            _playerAnimatorController.StopMoving();
-            _playerAnimatorController.enabled = false;
+            if (ReferenceManager.Instance.moneyParent.childCount > 0)
+                m_moneyWasThrown = true;
+
+            if (ReferenceManager.Instance.moneyParent.childCount == 0 && m_moneyWasThrown)
+            {
+                m_moneyWasThrown = false;
+                upgradeIndicator.SetActive(true);
+            }
         }
+
+        public void EnterUpgradeZone()
+        {
+            upgradeIndicator.SetActive(false);
+        }
+        #endregion
     }
 }

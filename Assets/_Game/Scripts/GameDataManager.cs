@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using NaughtyAttributes;
 using Aezakmi.AchievementSystem;
+using Aezakmi.UpgradeMechanics;
 
 namespace Aezakmi
 {
@@ -15,7 +16,6 @@ namespace Aezakmi
 
         private void Start()
         {
-            Debug.Log(Application.persistentDataPath + SAVEDATA_FILE_NAME);
             LoadGameData();
 
             // Since achievements' predicates (requirements) depend on gameData
@@ -41,6 +41,9 @@ namespace Aezakmi
         {
             for (int i = 0; i < AchievementsManager.Instance.achievements.Count; i++)
                 gameData.claimedList[i] = AchievementsManager.Instance.achievements[i].claimed;
+
+            for (int i = 0; i < gameData.upgradeLevels.Length; i++)
+                gameData.upgradeLevels[i] = UpgradesManager.Instance.upgrades[i].level;
 
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Create(Application.persistentDataPath + SAVEDATA_FILE_NAME);

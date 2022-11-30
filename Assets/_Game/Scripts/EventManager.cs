@@ -4,7 +4,9 @@ using UnityEngine;
 
 public enum GameEvents
 {
-
+    AnimalCaptured,
+    AnimalRescued,
+    PowerupPickedup,
 }
 
 namespace Aezakmi

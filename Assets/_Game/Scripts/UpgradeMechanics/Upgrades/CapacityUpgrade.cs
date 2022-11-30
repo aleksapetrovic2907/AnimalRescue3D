@@ -8,12 +8,12 @@ namespace Aezakmi.UpgradeMechanics
         {
             base.Upgrade(levels, isRelative);
 
-            Debug.Log($"Capacity is now {4 + level}");
+            ReferenceManager.Instance.player.transform.localScale += levels * ((GameManager.Instance.scaleOfNextLevel - 1f) / (float)UpgradesManager.Instance.maxUpgrades) * Vector3.one;
         }
 
         public override int Cost(int level)
         {
-            return level * 100;
+            return 0;
         }
     }
 }

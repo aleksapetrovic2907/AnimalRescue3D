@@ -19,20 +19,22 @@ namespace Aezakmi.Player
         private const float INFINITESIMAL = .05f;
         #endregion
 
-        private PlayerController _playerController;
-        private CharacterController _characterController;
-        private PlayerAnimatorController _playerAnimatorController;
-        private CatchController _catchController;
-        private Vector3 _velocity;
-        private float _isFullSpeedBonus;
-        private float _isTransitioningSpeedBonus;
+        private PlayerController m_playerController;
+        private CharacterController m_characterController;
+        private PlayerAnimatorController m_playerAnimatorController;
+        private CatchController m_catchController;
+        private Vector3 m_velocity;
+        private float m_isFullSpeedBonus;
+        private float m_isTransitioningSpeedBonus;
+
+        private const float MOVE_MODIFIER_CONST = .002f; // used to lower 'move amount' for achievements
 
         private void Start()
         {
-            _playerController = GetComponent<PlayerController>();
-            _characterController = GetComponent<CharacterController>();
-            _playerAnimatorController = GetComponent<PlayerAnimatorController>();
-            _catchController = GetComponent<CatchController>();
+            m_playerController = GetComponent<PlayerController>();
+            m_characterController = GetComponent<CharacterController>();
+            m_playerAnimatorController = GetComponent<PlayerAnimatorController>();
+            m_catchController = GetComponent<CatchController>();
         }
 
         private void Update()
@@ -43,18 +45,18 @@ namespace Aezakmi.Player
 
         private void Move()
         {
-            TotalMovementSpeed = BaseMovementSpeed + _isFullSpeedBonus + _isTransitioningSpeedBonus;
+            TotalMovementSpeed = BaseMovementSpeed + m_isFullSpeedBonus + m_isTransitioningSpeedBonus;
 
 
-            if (_characterController.isGrounded)
-                _velocity.y = 0f;
+            if (m_characterController.isGrounded)
+                m_velocity.y = 0f;
             else
-                _velocity.y += Physics.gravity.y * Time.deltaTime;
+                m_velocity.y += Physics.gravity.y * Time.deltaTime;
 
             if (!CanMove)
                 return;
 
-            _characterController.Move(_velocity * Time.deltaTime);
+            m_characterController.Move(m_velocity * Time.deltaTime);
 
             if (!IsMoving)
                 return;
@@ -62,8 +64,12 @@ namespace Aezakmi.Player
             float x = MovementJoystick.Horizontal;
             float z = MovementJoystick.Vertical;
 
+
             transform.forward = new Vector3(MovementJoystick.Horizontal, 0, MovementJoystick.Vertical);
-            _characterController.Move(transform.forward * TotalMovementSpeed * Time.deltaTime);
+            var moveAmount = transform.forward * TotalMovementSpeed * Time.deltaTime;
+            m_characterController.Move(moveAmount);
+
+            GameDataManager.Instance.gameData.distanceTravelled += (Mathf.Abs(moveAmount.x) + Mathf.Abs(moveAmount.z)) * MOVE_MODIFIER_CONST;
         }
 
         public void ChangeVehicle(int speedLevel, bool hasUpgraded)
@@ -89,7 +95,7 @@ namespace Aezakmi.Player
             PlayerMeshes[correctLevel].SetActive(true);
 
             // Set new hand containers
-            _catchController.SetNewHands(PlayerMeshes[correctLevel].GetComponent<MeshHandsController>());
+            m_catchController.SetNewHands(PlayerMeshes[correctLevel].GetComponent<MeshHandsController>());
 
             // Set color
             // ! if (speedLevel > 0)
@@ -98,7 +104,7 @@ namespace Aezakmi.Player
 
         public void FixPositionY()
         {
-            _characterController.Move(Vector3.up * INFINITESIMAL);
+            m_characterController.Move(Vector3.up * INFINITESIMAL);
         }
     }
 }

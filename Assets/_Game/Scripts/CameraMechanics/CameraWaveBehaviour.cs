@@ -22,6 +22,12 @@ namespace Aezakmi
 
         private Sequence m_waveSequence;
 
+        private void Update()
+        {
+            // if can skip && touched screen
+            //  BehaviourFinished()
+        }
+
         private void OnEnable()
         {
             m_previousPosition = transform.localPosition;
@@ -35,12 +41,14 @@ namespace Aezakmi
             Tweener rotateBack = transform.DOLocalRotate(m_previousRotation, moveDuration).SetEase(rotateEase);
 
             m_waveSequence = DOTween.Sequence();
-            m_waveSequence.Append(moveToPosition).Join(rotateTowardsWave).AppendInterval(waitDuration).Append(moveBack).Join(rotateBack);
+            m_waveSequence.Append(moveToPosition).Join(rotateTowardsWave).AppendInterval(waitDuration).Append(moveBack).Join(rotateBack)
+                .OnComplete(BehaviourFinished)
+                .Play();
 
             m_count++;
         }
 
-        public void StopBehaviour()
+        public void BehaviourFinished()
         {
             m_waveSequence.Kill();
             transform.position = m_previousPosition;

@@ -7,11 +7,14 @@ namespace Aezakmi
     {
         public int value;
 
-        [SerializeField] private Rigidbody Rigidbody;
+        [SerializeField] private new Collider collider;
+        [SerializeField] private new Rigidbody rigidbody;
 
-        private static float s_sequenceDuration = .15f;
+        private static float s_sequenceDuration = .35f;
         private static Ease s_moveEase = Ease.InSine;
         private static Ease s_scaleEase = Ease.OutSine;
+
+        private static float s_destroyDuration = .25f;
 
         public void SetValues(int value, Vector3 position)
         {
@@ -24,8 +27,16 @@ namespace Aezakmi
 
             sequence.Append(moveToPlatform).Join(scale).OnComplete(delegate
             {
-                Rigidbody.isKinematic = false;
+                rigidbody.isKinematic = false;
             }).Play();
+        }
+
+        public void DestroySelf()
+        {
+            transform.parent = null;
+            collider.enabled = false;
+            rigidbody.isKinematic = true;
+            transform.DOScale(Vector3.zero, s_destroyDuration).SetEase(Ease.OutSine).OnComplete(delegate { Destroy(gameObject); }).Play();
         }
     }
 }

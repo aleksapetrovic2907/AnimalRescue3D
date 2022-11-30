@@ -7,12 +7,8 @@ namespace Aezakmi
     {
         public int currentLevel;
         public int money;
-
-        [SerializeField] private List<Transform> m_transformsThatScaleWithLevel;
-
-        /// <summary>Using a formula returns a current level size where everything scales with it.</summary>
-        public float GetLevelSize() => Mathf.Pow(2, currentLevel);
-
+        public float scaleOfNextLevel; // so maxing capacity will bring player from scale(1,1,1) to scale(scaleOfNextLevel * Vector3.one)
+        
         private void Start()
         {
             // Load Game Data

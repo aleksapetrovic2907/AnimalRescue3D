@@ -4,24 +4,25 @@ namespace Aezakmi.Player
 {
     public class MoneyGrabber : MonoBehaviour
     {
-        [SerializeField] private Vector3 RaycastSize;
-        [SerializeField] private LayerMask RaycastLayers;
-        [SerializeField] private Mesh CapsuleMesh;
-        [SerializeField] private Vector3 Center;
+        [SerializeField] private Vector3 raycastSize;
+        [SerializeField] private LayerMask raycastLayers;
+        [SerializeField] private bool drawGizmos;
+        [SerializeField] private Mesh capsuleMesh;
+        [SerializeField] private Vector3 center;
 
-        private Collider[] _hitMoney;
+        private Collider[] m_hitMoney;
 
         private void Update()
         {
-            _hitMoney = Physics.OverlapCapsule((transform.position + Center) - Vector3.up * RaycastSize.y / 2, (transform.position + Center) + Vector3.up * RaycastSize.y / 2, RaycastSize.x / 2, RaycastLayers);
+            var m_raycastSize = raycastSize * transform.lossyScale.x;
+            m_hitMoney = Physics.OverlapCapsule((transform.position + center * transform.lossyScale.x) - Vector3.up * m_raycastSize.y / 2, (transform.position + center) + Vector3.up * m_raycastSize.y / 2, m_raycastSize.x / 2, raycastLayers);
 
-            if (_hitMoney.Length <= 0)
+            if (m_hitMoney.Length == 0)
                 return;
 
-            // ! VibrationsManager.VibrateSoft();
-
-            foreach (var money in _hitMoney)
+            foreach (var money in m_hitMoney)
             {
+                money.GetComponent<MoneyBehaviour>().DestroySelf();
                 // ! var moneyComponent = money.GetComponent<Money>();
                 // ! UpgradeManager.Instance.GrabMoney(moneyComponent.Amount);
                 // ! moneyComponent.DestroySelf();
@@ -31,8 +32,11 @@ namespace Aezakmi.Player
 #if UNITY_EDITOR
         private void OnDrawGizmos()
         {
+            if (!drawGizmos) return;
+
+            var m_raycastSize = raycastSize * transform.lossyScale.x;
             Gizmos.color = new Color(0, 1, 0, .25f);
-            Gizmos.DrawWireMesh(CapsuleMesh, -1, transform.position + Center, Quaternion.identity, RaycastSize);
+            Gizmos.DrawWireMesh(capsuleMesh, -1, transform.position + center * transform.lossyScale.x, Quaternion.identity, m_raycastSize);
         }
 #endif
     }

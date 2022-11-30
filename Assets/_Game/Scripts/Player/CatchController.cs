@@ -107,6 +107,7 @@ namespace Aezakmi.Player
         {
             if (!drawGizmos)
                 return;
+                
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, raycastRadius);
         }

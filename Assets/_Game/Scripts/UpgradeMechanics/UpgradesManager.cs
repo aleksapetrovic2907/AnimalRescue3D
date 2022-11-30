@@ -5,11 +5,14 @@ namespace Aezakmi.UpgradeMechanics
 {
     public partial class UpgradesManager : GloballyAccessibleBase<UpgradesManager>
     {
-        [SerializeField] private List<UpgradeBase> upgrades = new List<UpgradeBase>();
+        public int maxUpgrades = 5;
+
+        public List<UpgradeBase> upgrades = new List<UpgradeBase>();
         [SerializeField] private List<UpgradeButton> upgradeButtons = new List<UpgradeButton>();
 
         private void Start()
         {
+            LoadUpgradesData();
             AddButtonEventListeners();
             UpdateShopUI();
         }
@@ -32,6 +35,16 @@ namespace Aezakmi.UpgradeMechanics
         public void Upgrade(int upgradeIndex, int levels, bool isRelative)
         {
             upgrades[upgradeIndex].Upgrade(levels, isRelative);
+        }
+
+        private void LoadUpgradesData()
+        {
+            if (GameDataManager.Instance == null) return;
+
+            for (int i = 0; i < upgrades.Count; i++)
+            {
+                upgrades[i].level = GameDataManager.Instance.gameData.upgradeLevels[i];
+            }
         }
     }
 }

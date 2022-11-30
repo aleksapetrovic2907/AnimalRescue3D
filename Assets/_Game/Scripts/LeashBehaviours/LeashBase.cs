@@ -11,11 +11,11 @@ namespace Aezakmi.LeashBehaviours
         public Transform origin;
         public Transform end;
 
-        private void Start()
-        {
-            float levelSize = GameManager.Instance.GetLevelSize();
-            transform.localScale = new Vector3(levelSize, 1, levelSize);
-        }
+        // private void Start()
+        // {
+        //     float levelSize = GameManager.Instance.GetLevelSize();
+        //     transform.localScale = new Vector3(levelSize, 1, levelSize);
+        // }
 
         protected virtual void Update()
         {
