@@ -22,7 +22,9 @@ namespace Aezakmi.Player
 
             foreach (var money in m_hitMoney)
             {
-                money.GetComponent<MoneyBehaviour>().DestroySelf();
+                var mb = money.GetComponent<MoneyBehaviour>();
+                GameManager.Instance.AddMoney(mb.value);
+                mb.DestroySelf();
                 // ! var moneyComponent = money.GetComponent<Money>();
                 // ! UpgradeManager.Instance.GrabMoney(moneyComponent.Amount);
                 // ! moneyComponent.DestroySelf();

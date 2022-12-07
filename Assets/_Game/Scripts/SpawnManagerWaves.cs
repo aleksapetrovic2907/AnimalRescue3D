@@ -15,7 +15,50 @@ namespace Aezakmi
         public List<int> rescuesNeededPerWave;
         public Transform cameraWaveTransform;
         public int totalWaves { get { return animalCountPerWave.Count; } private set { } }
-        public int currentWave { get; private set; } = 0;
+        public int currentWave = 0;
+
+        public int NUM_OF_SMALL
+        {
+            get
+            {
+                int sum = 0;
+                foreach (var animalData in initialAnimalsSmall)
+                    sum += animalData.Value.Value;
+
+                return sum;
+            }
+            private set { }
+        }
+        public int NUM_OF_MEDIUM
+        {
+            get
+            {
+                int sum = 0;
+                foreach (var animals in initialAnimalsMedium)
+                    sum += animals.Value.Value;
+
+                foreach (var animals in animalCountPerWave[0])
+                    sum += animals.Value.Value;
+
+                return sum;
+            }
+            private set { }
+        }
+        public int NUM_OF_LARGE
+        {
+            get
+            {
+                int sum = 0;
+                foreach (var animals in initialAnimalsLarge)
+                    sum += animals.Value.Value;
+
+                foreach (var animals in animalCountPerWave[1])
+                    sum += animals.Value.Value;
+
+                return sum;
+            }
+            private set { }
+        }
 
         [Button]
         public void SendWave()
@@ -33,6 +76,8 @@ namespace Aezakmi
                     animal.SpawnAsWave(randomEnd);
                 }
             }
+
+            currentWave++;
         }
     }
 }

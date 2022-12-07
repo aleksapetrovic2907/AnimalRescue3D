@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Aezakmi
 {
-    public class MapManager : MonoBehaviour
+    public class MapManager : GloballyAccessibleBase<MapManager>
     {
         [SerializeField] private Camera mapCamera;
         [SerializeField] private float rotateMapSpeed;
@@ -16,7 +17,8 @@ namespace Aezakmi
         [SerializeField] private RectTransform mapRectTr;
         [SerializeField] private RectTransform canvasRectTransform;
 
-        [SerializeField] private GameObject spherePrefab; // ! TEMp
+        [Header("Popup")]
+        [SerializeField] private MapPopupUI popUp;
 
         public RectTransform img;
 
@@ -32,6 +34,8 @@ namespace Aezakmi
         private Vector2 m_mapSize = new Vector2(1000, 1000);
 
         private const int LERP_SPEED = 6;
+
+        private Region? m_selectedRegion;
 
         private void Start()
         {
@@ -54,7 +58,7 @@ namespace Aezakmi
                 foreach (var hitItem in results)
                 {
                     if (hitItem.gameObject == rotateArea) m_hitRotateArea = true;
-                    if (hitItem.gameObject == mapImage)
+                    if (hitItem.gameObject == mapImage && Input.GetMouseButtonDown(0) && !popUp.gameObject.activeSelf)
                     {
                         var screenPos = hitItem.screenPosition;
                         var canvasSize = canvasRectTransform.sizeDelta;
@@ -99,8 +103,34 @@ namespace Aezakmi
             Debug.DrawRay(startPosition, Vector3.forward * 5, Color.red, 5f);
             if (Physics.Raycast(startPosition, Vector3.forward, out hit, 100f, mapSphereLayer))
             {
-                Instantiate(spherePrefab, hit.point, Quaternion.identity, mapSphere.transform);
+                PopupMapSelection(hit.transform.gameObject.GetComponent<MapSelection>().region);
             }
+        }
+
+        private void PopupMapSelection(Region region)
+        {
+            if (region == Region.None) return;
+
+            m_selectedRegion = region;
+            popUp.gameObject.SetActive(true);
+            popUp.SetRegion(region);
+        }
+
+        public void ConfirmRegion()
+        {
+
+        }
+
+        public void ExitMapZone()
+        {
+            mapCamera.gameObject.SetActive(false);
+            canvasRectTransform.gameObject.SetActive(false);
+        }
+
+        public void EnterMapZone()
+        {
+            mapCamera.gameObject.SetActive(true);
+            canvasRectTransform.gameObject.SetActive(true);
         }
     }
 }

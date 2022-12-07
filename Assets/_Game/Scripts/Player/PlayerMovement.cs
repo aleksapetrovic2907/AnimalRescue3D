@@ -9,15 +9,7 @@ namespace Aezakmi.Player
         public bool CanMove = true;
         public float BaseMovementSpeed;
         public float TotalMovementSpeed { get; private set; }
-        [SerializeField] private Joystick MovementJoystick;
-
-        #region VEHICLES
-        [Header("Vehicles Settings")]
-        [Space(10)]
-        [SerializeField] private List<GameObject> PlayerMeshes;
-        [SerializeField] private List<Vector2> MeshesCorrespondingLevels;
-        private const float INFINITESIMAL = .05f;
-        #endregion
+        [SerializeField] private Joystick MovementJoystick;      
 
         private PlayerController m_playerController;
         private CharacterController m_characterController;
@@ -71,41 +63,6 @@ namespace Aezakmi.Player
 
             if (GameDataManager.Instance != null)
                 GameDataManager.Instance.gameData.distanceTravelled += (Mathf.Abs(moveAmount.x) + Mathf.Abs(moveAmount.z)) * MOVE_MODIFIER_CONST;
-        }
-
-        public void ChangeVehicle(int speedLevel, bool hasUpgraded)
-        {
-            var correctLevel = 0;
-
-            // Select mesh with correct vehicle
-            for (int i = 0; i < MeshesCorrespondingLevels.Count; i++)
-            {
-                if (speedLevel >= (int)MeshesCorrespondingLevels[i].x && speedLevel <= (int)MeshesCorrespondingLevels[i].y)
-                {
-                    correctLevel = i;
-                    break;
-                }
-            }
-
-            // Disable previous mesh
-            var previous = hasUpgraded ? 1 : -1;
-            if (correctLevel - previous >= 0 && correctLevel - previous < PlayerMeshes.Count)
-                PlayerMeshes[correctLevel - previous].SetActive(false);
-
-            // Activate new mesh
-            PlayerMeshes[correctLevel].SetActive(true);
-
-            // Set new hand containers
-            m_catchController.SetNewHands(PlayerMeshes[correctLevel].GetComponent<MeshHandsController>());
-
-            // Set color
-            // ! if (speedLevel > 0)
-            // !     PlayerMeshes[correctLevel].GetComponent<VehicleColorController>().ChangeColor(speedLevel);
-        }
-
-        public void FixPositionY()
-        {
-            m_characterController.Move(Vector3.up * INFINITESIMAL);
         }
     }
 }

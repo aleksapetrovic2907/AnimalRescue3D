@@ -1,19 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Aezakmi.UI;
 
 namespace Aezakmi
 {
     public class SettingsManager : MonoBehaviour
     {
         [SerializeField] private GameObject settingsParent;
-        [SerializeField] private Toggle soundsToggle;
-        [SerializeField] private Toggle vibrationsToggle;
+        [SerializeField] private Button soundsButton;
+        [SerializeField] private Button vibrationsButton;
+        [SerializeField] private ToggleUI soundsToggle;
+        [SerializeField] private ToggleUI vibrationsToggle;
+
+
 
         private void Start()
         {
             RefreshUI();
-            soundsToggle.onValueChanged.AddListener(delegate { GameDataManager.Instance.gameData.soundsActive = !GameDataManager.Instance.gameData.soundsActive; });
-            vibrationsToggle.onValueChanged.AddListener(delegate { GameDataManager.Instance.gameData.vibrationsActive = !GameDataManager.Instance.gameData.vibrationsActive; });
+            soundsButton.onClick.AddListener(delegate { GameDataManager.Instance.gameData.soundsActive = !GameDataManager.Instance.gameData.soundsActive; RefreshUI(); });
+            vibrationsButton.onClick.AddListener(delegate { GameDataManager.Instance.gameData.vibrationsActive = !GameDataManager.Instance.gameData.vibrationsActive; RefreshUI(); });
         }
 
         public void OpenSettingsMenu()
@@ -29,8 +34,8 @@ namespace Aezakmi
 
         private void RefreshUI()
         {
-            soundsToggle.isOn = GameDataManager.Instance.gameData.soundsActive;
-            vibrationsToggle.isOn = GameDataManager.Instance.gameData.vibrationsActive;
+            soundsToggle.ChangeActive(GameDataManager.Instance.gameData.soundsActive);
+            vibrationsToggle.ChangeActive(GameDataManager.Instance.gameData.vibrationsActive);
         }
     }
 }

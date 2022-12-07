@@ -12,6 +12,9 @@ namespace Aezakmi.Animals
         MovingToShelter
     }
 
+    public enum AnimalSize
+    { Small, Medium, Large }
+
     public class AnimalController : MonoBehaviour
     {
         public LeashType leashType; // The type of leash that should be used on the animal.
@@ -20,6 +23,7 @@ namespace Aezakmi.Animals
         public Transform topOfHead; // For displaying heart effects above the animals head.
         public AnimalStates AnimalState;
         public int MoneyWorth;
+        public AnimalSize animalSize = AnimalSize.Small;
 
         private Animator m_animator;
         private WanderController m_wanderController;
@@ -95,7 +99,7 @@ namespace Aezakmi.Animals
             var waveBehaviour = gameObject.AddComponent<WaveBehaviour>();
             waveBehaviour.SetDestination(pos);
         }
-        
+
         [Button]
         private void SetTransforms()
         {

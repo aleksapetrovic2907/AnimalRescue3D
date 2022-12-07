@@ -226,8 +226,8 @@ namespace Pathfinding.RVO {
 	public enum RVOLayer {
 		DefaultAgent = 1 << 0,
 		DefaultObstacle = 1 << 1,
-		Layer2 = 1 << 2,
-		Layer3 = 1 << 3,
+		FollowPlayer = 1 << 2,
+		MoveToShelter = 1 << 3,
 		Layer4 = 1 << 4,
 		Layer5 = 1 << 5,
 		Layer6 = 1 << 6,

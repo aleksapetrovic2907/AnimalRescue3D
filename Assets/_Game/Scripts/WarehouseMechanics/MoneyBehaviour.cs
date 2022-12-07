@@ -9,6 +9,8 @@ namespace Aezakmi
 
         [SerializeField] private new Collider collider;
         [SerializeField] private new Rigidbody rigidbody;
+        [SerializeField] private AudioClip audioClip;
+        [SerializeField] private AudioSource audioSource;
 
         private static float s_sequenceDuration = .35f;
         private static Ease s_moveEase = Ease.InSine;
@@ -37,6 +39,7 @@ namespace Aezakmi
             collider.enabled = false;
             rigidbody.isKinematic = true;
             transform.DOScale(Vector3.zero, s_destroyDuration).SetEase(Ease.OutSine).OnComplete(delegate { Destroy(gameObject); }).Play();
+            audioSource.PlayOneShot(audioClip);
         }
     }
 }

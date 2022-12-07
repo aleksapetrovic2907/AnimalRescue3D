@@ -7,19 +7,18 @@ namespace Aezakmi.UpgradeMechanics
     {
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(GameTags.Player))
-            {
-                UpgradesManager.Instance.EnteredShopArea();
-                PlayerController.Instance.EnterUpgradeZone();
-            }
+            if (!other.CompareTag(GameTags.Player)) return;
+
+            UpgradesManager.Instance.EnteredShopArea();
+            PlayerController.Instance.EnterUpgradeZone();
         }
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.CompareTag(GameTags.Player))
-            {
-                UpgradesManager.Instance.LeftShopArea();
-            }
+            if (!other.CompareTag(GameTags.Player)) return;
+
+            UpgradesManager.Instance.LeftShopArea();
+            PlayerController.Instance.LeaveUpgradeZone();
         }
     }
 }

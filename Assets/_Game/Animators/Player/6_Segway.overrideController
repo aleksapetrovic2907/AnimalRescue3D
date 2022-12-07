@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 6_Segway
+  m_Controller: {fileID: 9100000, guid: 73e0c88b864d5bb49980bf94a6b42580, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cfa835ec428fbc04487000a50aa4cf1b, type: 3}
+    m_OverrideClip: {fileID: 1827226128182048838, guid: b87ee6b83cda10946bb42966f3c1620d,
+      type: 3}
+  - m_OriginalClip: {fileID: 7400000, guid: 1ec07217d678fd648b09c3b0006e6d72, type: 3}
+    m_OverrideClip: {fileID: 1827226128182048838, guid: b87ee6b83cda10946bb42966f3c1620d,
+      type: 3}

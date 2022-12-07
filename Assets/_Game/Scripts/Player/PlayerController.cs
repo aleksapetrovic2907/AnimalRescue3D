@@ -1,55 +1,41 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Aezakmi.UpgradeMechanics;
+using Aezakmi.Animals;
 
 namespace Aezakmi.Player
 {
     public class PlayerController : GloballyAccessibleBase<PlayerController>
     {
-        public int CurrentCaught = 0;
-        public int MaximumCaught;
-        public bool IsFull { get { return CurrentCaught >= MaximumCaught; } private set { } }
-
         [SerializeField] private GameObject fullIndicator;
         [SerializeField] private GameObject shelterIndicator;
         [SerializeField] private GameObject newLevelIndicator;
         [SerializeField] private GameObject upgradeIndicator;
+        [SerializeField] private RangeIndicator rangeIndicator;
 
-        private CatchController _catchController;
-        private PlayerMovement _playerMovement;
-        private PlayerAnimatorController _playerAnimatorController;
+        private CatchController m_catchController;
+        private PlayerMovement m_playerMovement;
+        private PlayerAnimatorController m_playerAnimatorController;
 
         private bool m_moneyWasThrown = false;
 
         private void Start()
         {
-            _catchController = GetComponent<CatchController>();
-            _playerMovement = GetComponent<PlayerMovement>();
-            _playerAnimatorController = GetComponent<PlayerAnimatorController>();
+            m_catchController = GetComponent<CatchController>();
+            m_playerMovement = GetComponent<PlayerMovement>();
+            m_playerAnimatorController = GetComponent<PlayerAnimatorController>();
         }
 
         private void Update()
         {
-            _catchController.enabled = CurrentCaught < MaximumCaught;
             CheckForUpgradeIndicator();
-        }
-
-        public void AnimalCaught()
-        {
-            CurrentCaught++;
-            ToggleFullIndicator();
-        }
-
-        public void AnimalRescued()
-        {
-            CurrentCaught--;
-            ToggleFullIndicator();
         }
 
         #region Indicators
         public void ToggleFullIndicator()
         {
-            fullIndicator.SetActive(IsFull);
-            shelterIndicator.SetActive(IsFull);
+            fullIndicator.SetActive(m_catchController.IsFull());
+            shelterIndicator.SetActive(m_catchController.IsFull());
         }
 
         public void ToggleNewLevelIndicator()
@@ -59,12 +45,10 @@ namespace Aezakmi.Player
 
         public void CheckForUpgradeIndicator()
         {
-            // todo: must also require that player has enough money for an upgrade
-
             if (ReferenceManager.Instance.moneyParent.childCount > 0)
                 m_moneyWasThrown = true;
 
-            if (ReferenceManager.Instance.moneyParent.childCount == 0 && m_moneyWasThrown)
+            if (ReferenceManager.Instance.moneyParent.childCount == 0 && m_moneyWasThrown && GameDataManager.Instance.gameData.money >= UpgradesManager.Instance.leastExpensiveUpgradeCost && !UpgradesManager.Instance.AreAllUpgradesMaxed())
             {
                 m_moneyWasThrown = false;
                 upgradeIndicator.SetActive(true);
@@ -74,6 +58,12 @@ namespace Aezakmi.Player
         public void EnterUpgradeZone()
         {
             upgradeIndicator.SetActive(false);
+            rangeIndicator.Display();
+        }
+
+        public void LeaveUpgradeZone()
+        {
+            rangeIndicator.Disappear();
         }
         #endregion
     }

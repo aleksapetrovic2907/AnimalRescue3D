@@ -11,6 +11,12 @@ namespace Aezakmi.CameraMechanics
 
         private Vector3 m_offset;
 
+        private void Start()
+        {
+            m_offset = target.lossyScale.x * offset;
+            transform.position = target.position + m_offset;
+        }
+
         private void LateUpdate()
         {
             m_offset = target.lossyScale.x * offset;

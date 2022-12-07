@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using NativeSerializableDictionary;
+using Aezakmi.UpgradeMechanics;
 using Aezakmi.LeashBehaviours;
 using Aezakmi.Animals;
 
@@ -17,11 +19,27 @@ namespace Aezakmi.Player
         [SerializeField] private Transform rightHand;
         [SerializeField] private List<GameObject> leashPrefabs;
 
+        [Header("Capacity Settings")]
+        public List<int> currentCapacity = new List<int>(3);
+        public List<int> maxCapacity = new List<int>(3);
+        public SerializableDictionary<int, SerializableDictionary<AnimalSize, int>> maxCapacityPerCapacityLevel;
+
+        private int m_capacityLevel = 0;
+
         private Collider[] m_hitAnimals;
         private PlayerController m_playerController;
         private Dictionary<AnimalController, LeashBase> m_animalAndLeash = new Dictionary<AnimalController, LeashBase> { };
+        public float raycastRadiusModifier = 7;
 
-        private void Start() => m_playerController = GetComponent<PlayerController>();
+        private void Start()
+        {
+            for (int i = 0; i < maxCapacity.Count; i++)
+            {
+                maxCapacity[i] = maxCapacityPerCapacityLevel[m_capacityLevel].Value.GetValue((AnimalSize)i);
+            }
+
+            m_playerController = GetComponent<PlayerController>();
+        }
 
         private void Update()
         {
@@ -30,7 +48,7 @@ namespace Aezakmi.Player
 
         private void CheckForAnimals()
         {
-            m_hitAnimals = Physics.OverlapSphere(transform.position, raycastRadius, raycastLayers);
+            m_hitAnimals = Physics.OverlapSphere(transform.position, raycastRadius * raycastRadiusModifier, raycastLayers);
 
             if (m_hitAnimals.Length <= 0)
                 return;
@@ -39,11 +57,21 @@ namespace Aezakmi.Player
             {
                 if (animal.transform.parent.CompareTag(GameTags.FreeAnimal))
                 {
-                    m_playerController.AnimalCaught();
+                    var ac = animal.transform.parent.GetComponent<AnimalController>();
+                    if (!CanCatch(ac)) continue;
+
+                    currentCapacity[(int)ac.animalSize]++;
+                    m_playerController.ToggleFullIndicator();
                     PutAnimalOnLeash(animal.transform.parent);
                     EventManager.TriggerEvent(GameEvents.AnimalCaptured, new Dictionary<string, object> { { "animal", animal.transform.parent } });
                 }
             }
+        }
+
+        private bool CanCatch(AnimalController ac)
+        {
+            var index = (int)ac.animalSize;
+            return currentCapacity[index] != maxCapacity[index];
         }
 
         private void PutAnimalOnLeash(Transform animal)
@@ -81,12 +109,15 @@ namespace Aezakmi.Player
 
         public void AnimalRescued(AnimalController animalController)
         {
-            m_playerController.AnimalRescued();
+            currentCapacity[(int)animalController.animalSize]--;
+
             foreach (var animal in m_animalAndLeash)
             {
                 if (animal.Key == animalController)
                     Destroy(animal.Value.gameObject);
             }
+
+            m_playerController.ToggleFullIndicator();
         }
 
         public void SetNewHands(MeshHandsController meshHandsController)
@@ -101,15 +132,36 @@ namespace Aezakmi.Player
             }
         }
 
+        public void UpdateCapacity()
+        {
+            m_capacityLevel = UpgradesManager.Instance.upgrades[0].relativeLevel;
+
+            for (int i = 0; i < maxCapacity.Count; i++)
+            {
+                maxCapacity[i] = maxCapacityPerCapacityLevel[m_capacityLevel].Value.GetValue((AnimalSize)i);
+            }
+        }
+
+        // todo: replace magic numbers
+        public bool IsFull()
+        {
+            int animalSizeToCheck;
+            if (m_capacityLevel < 4) animalSizeToCheck = 0;
+            else if (m_capacityLevel < 7) animalSizeToCheck = 1;
+            else animalSizeToCheck = 2;
+
+            return currentCapacity[animalSizeToCheck] == maxCapacity[animalSizeToCheck];
+        }
+
         #region UNITYEDITOR
-#if UNITYEDITOR
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             if (!drawGizmos)
                 return;
-                
+
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, raycastRadius);
+            Gizmos.DrawWireSphere(transform.position, raycastRadius * raycastRadiusModifier);
         }
 #endif
         #endregion
