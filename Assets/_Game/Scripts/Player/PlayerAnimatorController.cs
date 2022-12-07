@@ -1,26 +1,44 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Aezakmi.Player
 {
-    public class PlayerAnimatorController : MonoBehaviour
+    public class PlayerAnimatorController : GloballyAccessibleBase<PlayerAnimatorController>
     {
-        private Animator _animator;
-        private PlayerMovement _playerMovement;
+        [SerializeField] private List<Animator> animators;
+
+        private PlayerMovement m_playerMovement;
+        private PlayerVehicleManager m_playerVehicleManager;
+
+        private Vehicle m_currentVehicle;
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
-            _playerMovement = GetComponent<PlayerMovement>();
+            m_playerMovement = GetComponent<PlayerMovement>();
+            m_playerVehicleManager = GetComponent<PlayerVehicleManager>();
         }
 
         private void Update()
         {
-            _animator.SetBool("IsMoving", _playerMovement.IsMoving);
+            foreach (var animator in animators)
+                animator.SetBool("IsMoving", m_playerMovement.IsMoving);
         }
 
-        public void StopMoving()
+        public void UpdateAnimations(Vehicle vehicle)
         {
-            _animator.SetBool("IsMoving", false);
+            m_currentVehicle = vehicle;
+            UpdateVehicle();
+        }
+
+        public void UpdateVehicle()
+        {
+            foreach (var animator in animators)
+            {
+                animator.SetFloat("IdleSpeed", m_currentVehicle.idleSpeed);
+                animator.SetFloat("MoveSpeed", m_currentVehicle.moveSpeed);
+                animator.runtimeAnimatorController = m_currentVehicle.animatorOverrideController;
+            }
+
         }
     }
 }

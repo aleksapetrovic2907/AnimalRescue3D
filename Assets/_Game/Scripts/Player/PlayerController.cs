@@ -1,68 +1,70 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Aezakmi.UpgradeMechanics;
+using Aezakmi.Animals;
 
 namespace Aezakmi.Player
 {
     public class PlayerController : GloballyAccessibleBase<PlayerController>
     {
-        public int CurrentCaught = 0;
-        public int MaximumCaught;
-        public bool IsFull { get { return CurrentCaught >= MaximumCaught; } private set { } }
+        [SerializeField] private GameObject fullIndicator;
+        [SerializeField] private GameObject shelterIndicator;
+        [SerializeField] private GameObject newLevelIndicator;
+        [SerializeField] private GameObject upgradeIndicator;
+        [SerializeField] private RangeIndicator rangeIndicator;
 
-        [SerializeField] private GameObject FullIndicator;
-        [SerializeField] private GameObject ShelterIndicator;
-        [SerializeField] private GameObject NewLevelIndicator;
+        private CatchController m_catchController;
+        private PlayerMovement m_playerMovement;
+        private PlayerAnimatorController m_playerAnimatorController;
 
-        private CatchController _catchController;
-        private PlayerMovement _playerMovement;
-        private PlayerAnimatorController _playerAnimatorController;
-
-        // ! private void OnEnable() => EventManager.StartListening(GameEvents.LevelFinished, StopMoving);
-        // ! private void OnDisable() => EventManager.StopListening(GameEvents.LevelFinished, StopMoving);
+        private bool m_moneyWasThrown = false;
 
         private void Start()
         {
-            _catchController = GetComponent<CatchController>();
-            _playerMovement = GetComponent<PlayerMovement>();
-            _playerAnimatorController = GetComponent<PlayerAnimatorController>();
+            m_catchController = GetComponent<CatchController>();
+            m_playerMovement = GetComponent<PlayerMovement>();
+            m_playerAnimatorController = GetComponent<PlayerAnimatorController>();
         }
 
         private void Update()
         {
-            _catchController.enabled = CurrentCaught < MaximumCaught;
+            CheckForUpgradeIndicator();
         }
 
-        public void AnimalCaught()
-        {
-            CurrentCaught++;
-            ToggleFullIndicator();
-        }
-
-        public void AnimalRescued()
-        {
-            CurrentCaught--;
-            ToggleFullIndicator();
-        }
-
+        #region Indicators
         public void ToggleFullIndicator()
         {
-            FullIndicator.SetActive(IsFull);
-            ShelterIndicator.SetActive(IsFull);
+            fullIndicator.SetActive(m_catchController.IsFull());
+            shelterIndicator.SetActive(m_catchController.IsFull());
         }
 
         public void ToggleNewLevelIndicator()
         {
-            NewLevelIndicator.SetActive(!NewLevelIndicator.activeSelf);
+            newLevelIndicator.SetActive(!newLevelIndicator.activeSelf);
         }
 
-        private void StopMoving(Dictionary<string, object> message)
+        public void CheckForUpgradeIndicator()
         {
-            // Happens when level finishes
-            _playerMovement.BaseMovementSpeed = 0f;
-            _playerMovement.enabled = false;
+            if (ReferenceManager.Instance.moneyParent.childCount > 0)
+                m_moneyWasThrown = true;
 
-            _playerAnimatorController.StopMoving();
-            _playerAnimatorController.enabled = false;
+            if (ReferenceManager.Instance.moneyParent.childCount == 0 && m_moneyWasThrown && GameDataManager.Instance.gameData.money >= UpgradesManager.Instance.leastExpensiveUpgradeCost && !UpgradesManager.Instance.AreAllUpgradesMaxed())
+            {
+                m_moneyWasThrown = false;
+                upgradeIndicator.SetActive(true);
+            }
         }
+
+        public void EnterUpgradeZone()
+        {
+            upgradeIndicator.SetActive(false);
+            rangeIndicator.Display();
+        }
+
+        public void LeaveUpgradeZone()
+        {
+            rangeIndicator.Disappear();
+        }
+        #endregion
     }
 }

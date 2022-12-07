@@ -4,7 +4,11 @@ namespace Aezakmi.UpgradeMechanics
 {
     public abstract class UpgradeBase : MonoBehaviour
     {
-        public int level = 1;
+        public int level = 0;
+        public int relativeLevel = 0; // The amount of times upgraded in current scene
+        public int baseCost;
+
+        protected virtual void Start() => baseCost = UpgradesManager.Instance.baseCost;
 
         /// <summary>
         /// Increases level of the upgrade and executes logic that comes with it.
@@ -14,6 +18,7 @@ namespace Aezakmi.UpgradeMechanics
         public virtual void Upgrade(int levels, bool isRelative)
         {
             level = isRelative ? level + levels : levels;
+            relativeLevel = isRelative ? relativeLevel + levels : relativeLevel;
         }
 
         /// <summary>
@@ -26,9 +31,20 @@ namespace Aezakmi.UpgradeMechanics
             level = isRelative ? level - levels : levels;
         }
 
-        /// <summary>
-        /// Returns the cost of buying an upgrade of a passed level. Usually determined by a formula.
-        /// </summary>
-        public abstract int Cost(int level);
+        public virtual void UpdateCost()
+        {
+            float modifier = 0;
+            switch (SpawnManager.Instance.currentWave)
+            {
+                case 0:
+                    modifier = UpgradesManager.Instance.firstWaveConstant; break;
+                case 1:
+                    modifier = UpgradesManager.Instance.secondWaveConstant; break;
+                case 2:
+                    modifier = UpgradesManager.Instance.thirdWaveConstant; break;
+            }
+
+            baseCost = (int)(baseCost * modifier);
+        }
     }
 }

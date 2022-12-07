@@ -115,6 +115,7 @@ Library: lib_burst_generated
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
+--compilation-defines=MOREMOUNTAINS_NICEVIBRATIONS_INSTALLED
 --compilation-defines=PACKAGE_PHYSICS
 --compilation-defines=PACKAGE_PHYSICS2D
 --compilation-defines=PACKAGE_TILEMAP
@@ -163,6 +164,8 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Services.Core.Scheduler.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Services.Core.Device.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Services.Core.Analytics.dll
+--root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Recorder.dll
+--root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Lofelt.NiceVibrations.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.ProBuilder.KdTree.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Services.Core.Threading.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Services.Core.Configuration.dll
@@ -173,6 +176,7 @@ Library: lib_burst_generated
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.ProBuilder.Stl.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll
+--root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.Recorder.Base.dll
 --root-assembly=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\Unity.RenderPipelines.Universal.Shaders.dll
 --assembly-folder=C:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Temp\StagingArea\Data\Managed\
 --pdb-search-paths=Temp/ManagedSymbols/

@@ -2,10 +2,11 @@ using UnityEngine;
 using NativeSerializableDictionary;
 using NaughtyAttributes;
 using Pathfinding;
+using Aezakmi.Animals;
 
 namespace Aezakmi
 {
-    public partial class SpawnManager : MonoBehaviour
+    public partial class SpawnManager : GloballyAccessibleBase<SpawnManager>
     {
         private enum SpawnerType { Box, Sphere }
         private const int MAX_FAILED_SEARCHES = 10;
@@ -35,6 +36,7 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_smallScale * Vector3.one;
+                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Small;
                 }
 
             foreach (var animalData in initialAnimalsMedium)
@@ -42,6 +44,7 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_mediumScale * Vector3.one;
+                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Medium;
                 }
 
             foreach (var animalData in initialAnimalsLarge)
@@ -49,7 +52,7 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_largeScale * Vector3.one;
-                    Debug.Log(animal.transform.localScale);
+                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Large;
                 }
 
         }

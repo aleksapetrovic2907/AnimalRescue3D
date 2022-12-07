@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Aezakmi
@@ -6,16 +5,33 @@ namespace Aezakmi
     public class GameManager : GloballyAccessibleBase<GameManager>
     {
         public int currentLevel;
-        public int money;
+        public float scaleOfNextLevel; // so maxing capacity will bring player from scale(1,1,1) to scale(scaleOfNextLevel * Vector3.one)
 
-        [SerializeField] private List<Transform> m_transformsThatScaleWithLevel;
+        public int totalAnimals = 160;
+        public float rescuesPercentageToPassLevel = .95f;
 
-        /// <summary>Using a formula returns a current level size where everything scales with it.</summary>
-        public float GetLevelSize() => Mathf.Pow(2, currentLevel);
 
-        private void Start()
+        public void AddMoney(int value)
         {
-            // Load Game Data
+            if (GameDataManager.Instance == null) return;
+            GameDataManager.Instance.gameData.money += value;
+            GameDataManager.Instance.gameData.totalMoney += value;
+        }
+
+        public void LoseMoney(int value)
+        {
+            GameDataManager.Instance.gameData.money -= value;
+        }
+
+        private void Update()
+        {
+            CountTimePlayed();
+        }
+
+        private void CountTimePlayed()
+        {
+            if (GameDataManager.Instance == null) return;
+            GameDataManager.Instance.gameData.timePlayed += Time.unscaledDeltaTime;
         }
     }
 }

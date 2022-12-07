@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/_Game/_Scenes/01_Preload.unity
     guid: 411a5c54cf56c5d4a871776cbd6cee94
   - enabled: 1
+    path: Assets/_Game/_Scenes/02_LevelForAd.unity
+    guid: e23f50381e84ec74aa0481c9eaf63c24
+  - enabled: 1
     path: Assets/_Game/_Scenes/02_Level1.unity
     guid: 217c94cc880d2ec49bfdc533b87f964c
   m_configObjects: {}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using Pathfinding;
+using Pathfinding.RVO;
 
 namespace Aezakmi.Animals
 {
@@ -56,6 +57,7 @@ namespace Aezakmi.Animals
                 m_aiPath.SearchPath();
             }
 
+
             m_lastCheckedPosition = transform.position;
         }
 
@@ -69,7 +71,7 @@ namespace Aezakmi.Animals
                 randPosition = (Random.insideUnitSphere * radius) + transform.position;
                 var nearestNode = AstarData.active.GetNearest(randPosition).node;
 
-                if (nearestNode.Walkable && nearestNode.Tag != WAVEAREA_TAG_INDEX)
+                if (nearestNode.Walkable && nearestNode.Tag != WAVEAREA_TAG_INDEX && nearestNode.Tag != UNWANDERABLE_TAG_INDEX)
                 {
                     targetPosition = (Vector3)nearestNode.position;
                     break;

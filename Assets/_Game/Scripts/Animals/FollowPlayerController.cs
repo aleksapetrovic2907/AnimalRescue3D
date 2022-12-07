@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using Aezakmi.Player;
 using Pathfinding;
+using Pathfinding.RVO;
 using NaughtyAttributes;
 
 namespace Aezakmi.Animals
@@ -12,35 +13,39 @@ namespace Aezakmi.Animals
     {
         [SerializeField] private float DistanceToStartWaiting;
 
-        private Animator _animator;
-        private Seeker _seeker;
-        private AIPath _aiPath;
-        private Vector3 _playerPosition;
+        private Animator m_animator;
+        private Seeker m_seeker;
+        private AIPath m_aiPath;
+        private RVOController m_rvoController;
+        private Vector3 m_playerPosition;
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
-            _seeker = GetComponent<Seeker>();
-            _aiPath = GetComponent<AIPath>();
-            _seeker.traversableTags |= (1 << 1);
+            m_animator = GetComponent<Animator>();
+            m_seeker = GetComponent<Seeker>();
+            m_aiPath = GetComponent<AIPath>();
+            m_rvoController = GetComponent<RVOController>();
+            m_seeker.traversableTags |= (1 << 1);
+            m_rvoController.layer = RVOLayer.FollowPlayer;
+            m_rvoController.collidesWith = RVOLayer.FollowPlayer;
         }
 
         private void Update()
         {
-            _playerPosition = PlayerController.Instance.transform.position;
+            m_playerPosition = PlayerController.Instance.transform.position;
 
-            if (IsPlayerTooClose(_playerPosition))
+            if (IsPlayerTooClose(m_playerPosition))
             {
-                _animator.SetBool("IsRunning", false);
-                _aiPath.canMove = false;
+                m_animator.SetBool("IsRunning", false);
+                m_aiPath.canMove = false;
             }
             else
             {
-                _animator.SetBool("IsRunning", true);
-                _aiPath.isStopped = false;
-                _aiPath.canMove = true;
-                _aiPath.maxSpeed = PlayerMovement.Instance.TotalMovementSpeed;
-                _aiPath.destination = _playerPosition;
+                m_animator.SetBool("IsRunning", true);
+                m_aiPath.isStopped = false;
+                m_aiPath.canMove = true;
+                m_aiPath.maxSpeed = PlayerMovement.Instance.TotalMovementSpeed;
+                m_aiPath.destination = m_playerPosition;
             }
         }
 
@@ -52,6 +57,6 @@ namespace Aezakmi.Animals
             return Vector3.Distance(playerPosition, myPos) <= DistanceToStartWaiting;
         }
 
-        public void StopFollowing() => _aiPath.canMove = false;
+        public void StopFollowing() => m_aiPath.canMove = false;
     }
 }

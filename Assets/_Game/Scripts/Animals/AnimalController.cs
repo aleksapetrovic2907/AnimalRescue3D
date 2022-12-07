@@ -12,6 +12,9 @@ namespace Aezakmi.Animals
         MovingToShelter
     }
 
+    public enum AnimalSize
+    { Small, Medium, Large }
+
     public class AnimalController : MonoBehaviour
     {
         public LeashType leashType; // The type of leash that should be used on the animal.
@@ -20,32 +23,33 @@ namespace Aezakmi.Animals
         public Transform topOfHead; // For displaying heart effects above the animals head.
         public AnimalStates AnimalState;
         public int MoneyWorth;
+        public AnimalSize animalSize = AnimalSize.Small;
 
-        private Animator _animator;
-        private WanderController _wanderController;
-        private FollowPlayerController _followPlayerController;
-        private MoveToShelterController _moveToShelterController;
+        private Animator m_animator;
+        private WanderController m_wanderController;
+        private FollowPlayerController m_followPlayerController;
+        private MoveToShelterController m_moveToShelterController;
         private static int s_percentageToWanderAsInitialState = 80;
 
-        private bool _isPartOfWave = false;
+        private bool m_isPartOfWave = false;
 
         private void Start()
         {
-            _animator = GetComponent<Animator>();
-            _wanderController = GetComponent<WanderController>();
-            _followPlayerController = GetComponent<FollowPlayerController>();
-            _moveToShelterController = GetComponent<MoveToShelterController>();
+            m_animator = GetComponent<Animator>();
+            m_wanderController = GetComponent<WanderController>();
+            m_followPlayerController = GetComponent<FollowPlayerController>();
+            m_moveToShelterController = GetComponent<MoveToShelterController>();
             SetRandomState();
         }
 
         private void SetRandomState()
         {
-            if (_isPartOfWave)
+            if (m_isPartOfWave)
                 return;
 
             AnimalState = Random.Range(0f, 100f) < s_percentageToWanderAsInitialState ? AnimalStates.Wandering : AnimalStates.Waiting;
             if (AnimalState == AnimalStates.Wandering)
-                _wanderController.enabled = true;
+                m_wanderController.enabled = true;
 
             SetRandomRotation();
             SetAnimations();
@@ -55,11 +59,11 @@ namespace Aezakmi.Animals
         {
             if (AnimalState == AnimalStates.Wandering)
             {
-                _wanderController.StopWandering();
-                _wanderController.enabled = false;
+                m_wanderController.StopWandering();
+                m_wanderController.enabled = false;
             }
 
-            _followPlayerController.enabled = true;
+            m_followPlayerController.enabled = true;
             AnimalState = AnimalStates.FollowingPlayer;
             SetAnimations();
         }
@@ -72,15 +76,15 @@ namespace Aezakmi.Animals
 
         private void SetAnimations()
         {
-            _animator.SetBool("IsRunning", AnimalState != AnimalStates.Waiting);
+            m_animator.SetBool("IsRunning", AnimalState != AnimalStates.Waiting);
         }
 
         public void MoveToShelter(Transform endPoint)
         {
-            _followPlayerController.StopFollowing();
-            _followPlayerController.enabled = false;
-            _moveToShelterController.enabled = true;
-            _moveToShelterController.SetDestination(endPoint.position);
+            m_followPlayerController.StopFollowing();
+            m_followPlayerController.enabled = false;
+            m_moveToShelterController.enabled = true;
+            m_moveToShelterController.SetDestination(endPoint.position);
         }
 
         private void SetRandomRotation()
@@ -91,11 +95,11 @@ namespace Aezakmi.Animals
 
         public void SpawnAsWave(Vector3 pos)
         {
-            _isPartOfWave = true;
+            m_isPartOfWave = true;
             var waveBehaviour = gameObject.AddComponent<WaveBehaviour>();
             waveBehaviour.SetDestination(pos);
         }
-        
+
         [Button]
         private void SetTransforms()
         {

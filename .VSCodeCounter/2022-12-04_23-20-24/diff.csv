@@ -1,0 +1,461 @@
+"filename", "language", "C#", "JSON", "ShaderLab", "HLSL", "Markdown", "XML", "HTML", "comment", "blank", "total"
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Scripts\Editor\Menu\MalbersMenu.cs", "C#", -39, 0, 0, 0, 0, 0, 0, -15, -20, -74
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Scripts\Readme\Readme.cs", "C#", -162, 0, 0, 0, 0, 0, 0, -3, -37, -202
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\AnisotropicCircular.shader", "ShaderLab", 0, 0, -172, 0, 0, 0, 0, -103, -5, -280
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\AnisotropicWard.shader", "ShaderLab", 0, 0, -174, 0, 0, 0, 0, -151, -5, -330
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color3x3.shader", "ShaderLab", 0, 0, -159, 0, 0, 0, 0, -154, -4, -317
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color4x2 Emission.shader", "ShaderLab", 0, 0, -121, 0, 0, 0, 0, -96, -6, -223
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color4x2.shader", "ShaderLab", 0, 0, -126, 0, 0, 0, 0, -90, -6, -222
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color4x3.shader", "ShaderLab", 0, 0, -131, 0, 0, 0, 0, -121, -4, -256
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color4x4 v2.shader", "ShaderLab", 0, 0, -242, 0, 0, 0, 0, -212, -4, -458
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Color4x4.shader", "ShaderLab", 0, 0, -161, 0, 0, 0, 0, -137, -4, -302
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\DragonEggs_Shader.shader", "ShaderLab", 0, 0, -64, 0, 0, 0, 0, -44, -4, -112
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Fur.shader", "ShaderLab", 0, 0, -217, 0, 0, 0, 0, -143, -6, -366
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Golem Shader.shader", "ShaderLab", 0, 0, -99, 0, 0, 0, 0, -93, -4, -196
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\MWater2.shader", "ShaderLab", 0, 0, -88, 0, 0, 0, 0, -83, -7, -178
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Mask4Realistic.shader", "ShaderLab", 0, 0, -115, 0, 0, 0, 0, -155, -8, -278
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Mask4Toon.shader", "ShaderLab", 0, 0, -92, 0, 0, 0, 0, -129, -9, -230
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Mask8Realistic.shader", "ShaderLab", 0, 0, -160, 0, 0, 0, 0, -274, -8, -442
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Mask8Toon.shader", "ShaderLab", 0, 0, -126, 0, 0, 0, 0, -239, -9, -374
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\SimpleOutline.shader", "ShaderLab", 0, 0, -70, 0, 0, 0, 0, -22, -10, -102
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\Malbers Animations\Common\Shaders\Wind Shader.shader", "ShaderLab", 0, 0, -74, 0, 0, 0, 0, -70, -7, -151
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\PolygonDog\Scripts\POLYGON_CameraController.cs", "C#", -43, 0, 0, 0, 0, 0, 0, -13, 0, -56
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\PolygonDog\Scripts\POLYGON_DogAnimationController.cs", "C#", -461, 0, 0, 0, 0, 0, 0, -10, -2, -473
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\PolygonDog\Scripts\POLYGON_DogPrefabs.cs", "C#", -283, 0, 0, 0, 0, 0, 0, -13, -1, -297
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Common_AnimSpeed.cs", "C#", -20, 0, 0, 0, 0, 0, 0, -2, -5, -27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Common_AnimationControl.cs", "C#", -39, 0, 0, 0, 0, 0, 0, -2, -12, -53
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Common_KillSwitch.cs", "C#", -19, 0, 0, 0, 0, 0, 0, -2, -8, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Common_PlaySound.cs", "C#", -70, 0, 0, 0, 0, 0, 0, 0, -8, -78
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Common_RandomInt.cs", "C#", -16, 0, 0, 0, 0, 0, 0, -17, -10, -43
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\RandomCharacterPlacer.cs", "C#", -40, 0, 0, 0, 0, 0, 0, 0, -8, -48
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\AIState.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -1, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\AIStats.cs", "C#", -26, 0, 0, 0, 0, 0, 0, 0, -9, -35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Common_AudioManager.cs", "C#", -83, 0, 0, 0, 0, 0, 0, 0, -14, -97
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Common_SurfaceRotation.cs", "C#", -54, 0, 0, 0, 0, 0, 0, 0, -11, -65
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Common_WanderManager.cs", "C#", -67, 0, 0, 0, 0, 0, 0, 0, -9, -76
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Common_WanderScript.cs", "C#", -813, 0, 0, 0, 0, 0, 0, -17, -131, -961
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Editor\Common_StatsTable.cs", "C#", -291, 0, 0, 0, 0, 0, 0, -9, -95, -395
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Editor\Common_WanderManagerEditor.cs", "C#", -36, 0, 0, 0, 0, 0, 0, -1, -7, -44
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\Editor\Common_WanderScriptEditor.cs", "C#", -112, 0, 0, 0, 0, 0, 0, -15, -37, -164
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\IdleState.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -1, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Common\Wander Script\MovementState.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -1, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Dino_AIStats.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Dino_AudioManager.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Dino_SurfaceRotation.cs", "C#", -6, 0, 0, 0, 0, 0, 0, 0, -1, -7
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Dino_WanderManager.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Dino_WanderScript.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -2, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Editor\Dino_StatsTable.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -1, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Editor\Dino_WanderManagerEditor.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -1, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Editor\Dino_WanderScriptEditor.cs", "C#", -15, 0, 0, 0, 0, 0, 0, 0, -1, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated Dinos\- Scripts\Wander Script\Editor\PrehistoricAnimals_WanderScriptEditor.cs", "C#", -13, 0, 0, 0, 0, 0, 0, -1, -3, -17
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated People\- Materials\Simple Water\SimpleWater.cs", "C#", -57, 0, 0, 0, 0, 0, 0, 0, -9, -66
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated People\- Materials\Simple Water\SimpleWater.shader", "ShaderLab", 0, 0, -110, 0, 0, 0, 0, -6, -24, -140
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Animated People\- UI\TextShader.shader", "ShaderLab", 0, 0, -17, 0, 0, 0, 0, 0, -1, -18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Camera\PeriodicShake.cs", "C#", -45, 0, 0, 0, 0, 0, 0, -1, -15, -61
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Demo scene\AnimalButton.cs", "C#", -37, 0, 0, 0, 0, 0, 0, 0, -9, -46
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Demo scene\AnimalViewer.cs", "C#", -124, 0, 0, 0, 0, 0, 0, -5, -34, -163
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Demo scene\AnimationControl.cs", "C#", -33, 0, 0, 0, 0, 0, 0, 0, -8, -41
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Demo scene\PanelControl.cs", "C#", -20, 0, 0, 0, 0, 0, 0, 0, -3, -23
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Demo scene\PlaySound.cs", "C#", -6, 0, 0, 0, 0, 0, 0, 0, -1, -7
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\RandomAnimalPlacer.cs", "C#", -40, 0, 0, 0, 0, 0, 0, 0, -8, -48
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Wander Script\PrehistoricAnimals_AIStats.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Wander Script\PrehistoricAnimals_AudioManager.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -2, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Wander Script\PrehistoricAnimals_SurfaceRotation.cs", "C#", -54, 0, 0, 0, 0, 0, 0, 0, -11, -65
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Wander Script\PrehistoricAnimals_WanderManager.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -2, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Ogi\Low Poly Assets\polyperfect\Low Poly Prehistoric Animals\- Scripts\Wander Script\PrehistoricAnimals_WanderScript.cs", "C#", -12, 0, 0, 0, 0, 0, 0, 0, -2, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Behaviors\AIDestinationSetter.cs", "C#", -20, 0, 0, 0, 0, 0, 0, -15, -5, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Behaviors\Patrol.cs", "C#", -32, 0, 0, 0, 0, 0, 0, -16, -12, -60
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\CHANGELOG.md", "Markdown", 0, 0, 0, 0, -1894, 0, 0, 0, -105, -1999
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\AIBase.cs", "C#", -366, 0, 0, 0, 0, 0, 0, -317, -104, -787
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\AILerp.cs", "C#", -351, 0, 0, 0, 0, 0, 0, -243, -108, -702
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\AIPath.cs", "C#", -226, 0, 0, 0, 0, 0, 0, -216, -78, -520
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\IAstarAI.cs", "C#", -31, 0, 0, 0, 0, 0, 0, -336, -26, -393
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\NavmeshController.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\RichAI.cs", "C#", -285, 0, 0, 0, 0, 0, 0, -197, -95, -577
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\RichPath.cs", "C#", -583, 0, 0, 0, 0, 0, 0, -158, -156, -897
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\Seeker.cs", "C#", -225, 0, 0, 0, 0, 0, 0, -304, -74, -603
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AI\TurnBasedAI.cs", "C#", -19, 0, 0, 0, 0, 0, 0, -3, -4, -26
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AstarData.cs", "C#", -413, 0, 0, 0, 0, 0, 0, -228, -109, -750
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AstarMath.cs", "C#", -799, 0, 0, 0, 0, 0, 0, -484, -248, -1531
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\AstarPath.cs", "C#", -849, 0, 0, 0, 0, 0, 0, -1014, -306, -2169
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\GraphUpdateScene.cs", "C#", -209, 0, 0, 0, 0, 0, 0, -132, -58, -399
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\GraphUpdateShape.cs", "C#", -96, 0, 0, 0, 0, 0, 0, -32, -16, -144
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\AnimationLink.cs", "C#", -98, 0, 0, 0, 0, 0, 0, -1, -24, -123
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\ArrayPool.cs", "C#", -112, 0, 0, 0, 0, 0, 0, -68, -19, -199
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\AstarDebugger.cs", "C#", -233, 0, 0, 0, 0, 0, 0, -35, -77, -345
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\AutoRepathPolicy.cs", "C#", -45, 0, 0, 0, 0, 0, 0, -41, -15, -101
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\BinaryHeap.cs", "C#", -191, 0, 0, 0, 0, 0, 0, -82, -52, -325
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\Draw.cs", "C#", -71, 0, 0, 0, 0, 0, 0, -1, -20, -92
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\EditorResourceHelper.cs", "C#", -80, 0, 0, 0, 0, 0, 0, -10, -16, -106
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs", "C#", -7, 0, 0, 0, 0, 0, 0, -2, -2, -11
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\GraphModifier.cs", "C#", -119, 0, 0, 0, 0, 0, 0, -57, -29, -205
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\GraphUpdateProcessor.cs", "C#", -242, 0, 0, 0, 0, 0, 0, -65, -63, -370
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\GraphUtilities.cs", "C#", -146, 0, 0, 0, 0, 0, 0, -100, -26, -272
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\HierarchicalGraph.cs", "C#", -222, 0, 0, 0, 0, 0, 0, -77, -48, -347
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\Int3.cs", "C#", -220, 0, 0, 0, 0, 0, 0, -32, -63, -315
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\ListPool.cs", "C#", -115, 0, 0, 0, 0, 0, 0, -74, -23, -212
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\MovementUtilities.cs", "C#", -71, 0, 0, 0, 0, 0, 0, -77, -27, -175
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\NodeLink.cs", "C#", -116, 0, 0, 0, 0, 0, 0, -16, -26, -158
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\NodeLink2.cs", "C#", -220, 0, 0, 0, 0, 0, 0, -32, -57, -309
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\NodeLink3.cs", "C#", -228, 0, 0, 0, 0, 0, 0, -18, -68, -314
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\ObjectPool.cs", "C#", -65, 0, 0, 0, 0, 0, 0, -56, -11, -132
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\PathInterpolator.cs", "C#", -144, 0, 0, 0, 0, 0, 0, -27, -36, -207
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\PathPool.cs", "C#", -65, 0, 0, 0, 0, 0, 0, -11, -13, -89
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\PathProcessor.cs", "C#", -337, 0, 0, 0, 0, 0, 0, -137, -110, -584
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\PathReturnQueue.cs", "C#", -42, 0, 0, 0, 0, 0, 0, -20, -12, -74
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\StackPool.cs", "C#", -46, 0, 0, 0, 0, 0, 0, -40, -13, -99
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\ThreadControlQueue.cs", "C#", -181, 0, 0, 0, 0, 0, 0, -66, -45, -292
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\WindowsStoreCompatibility.cs", "C#", -111, 0, 0, 0, 0, 0, 0, -15, -23, -149
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Misc\WorkItemProcessor.cs", "C#", -167, 0, 0, 0, 0, 0, 0, -129, -43, -339
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Nodes\GraphNode.cs", "C#", -330, 0, 0, 0, 0, 0, 0, -385, -97, -812
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Path.cs", "C#", -384, 0, 0, 0, 0, 0, 0, -363, -111, -858
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\PathHandler.cs", "C#", -100, 0, 0, 0, 0, 0, 0, -76, -34, -210
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\RVO\RVOAgent.cs", "C#", -552, 0, 0, 0, 0, 0, 0, -236, -185, -973
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\RVO\RVOCoreObstacle.cs", "C#", -12, 0, 0, 0, 0, 0, 0, -9, -7, -28
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\RVO\RVOCoreSimulator.cs", "C#", -408, 0, 0, 0, 0, 0, 0, -355, -125, -888
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\RVO\RVOLine.cs", "C#", -7, 0, 0, 0, 0, 0, 0, -4, -2, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\RVO\RVOQuadtree.cs", "C#", -179, 0, 0, 0, 0, 0, 0, -32, -30, -241
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Serialization\JsonConverters.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs", "C#", -577, 0, 0, 0, 0, 0, 0, -159, -176, -912
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Serialization\SimpleJsonReplacement.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Serialization\SimpleZipReplacement.cs", "C#", -62, 0, 0, 0, 0, 0, 0, 0, -18, -80
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\Serialization\TinyJson.cs", "C#", -383, 0, 0, 0, 0, 0, 0, -30, -54, -467
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Core\astarclasses.cs", "C#", -518, 0, 0, 0, 0, 0, 0, -543, -145, -1206
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Documentation\documentation.html", "HTML", 0, 0, 0, 0, 0, 0, -15381, 0, -1662, -17043
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Documentation\index.md", "Markdown", 0, 0, 0, 0, -6, 0, 0, 0, -2, -8
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AIBaseEditor.cs", "C#", -138, 0, 0, 0, 0, 0, 0, -3, -26, -167
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AILerpEditor.cs", "C#", -27, 0, 0, 0, 0, 0, 0, 0, -5, -32
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AnimationLinkEditor.cs", "C#", -21, 0, 0, 0, 0, 0, 0, 0, -4, -25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AstarPathEditor.cs", "C#", -1091, 0, 0, 0, 0, 0, 0, -107, -306, -1504
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AstarUpdateChecker.cs", "C#", -228, 0, 0, 0, 0, 0, 0, -36, -44, -308
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\AstarUpdateWindow.cs", "C#", -81, 0, 0, 0, 0, 0, 0, -1, -22, -104
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs", "C#", -12, 0, 0, 0, 0, 0, 0, -4, -4, -20
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc", "HLSL", 0, 0, 0, -51, 0, 0, 0, -19, -8, -78
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader", "ShaderLab", 0, 0, -89, 0, 0, 0, 0, -2, -28, -119
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader", "ShaderLab", 0, 0, -70, 0, 0, 0, 0, -3, -15, -88
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs", "C#", -107, 0, 0, 0, 0, 0, 0, -14, -25, -146
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs", "C#", -684, 0, 0, 0, 0, 0, 0, -28, -167, -879
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\LayerGridGraphEditor.cs", "C#", -52, 0, 0, 0, 0, 0, 0, -4, -19, -75
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs", "C#", -28, 0, 0, 0, 0, 0, 0, 0, -10, -38
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs", "C#", -42, 0, 0, 0, 0, 0, 0, 0, -15, -57
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphEditors\RecastGraphEditor.cs", "C#", -193, 0, 0, 0, 0, 0, 0, -12, -58, -263
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs", "C#", -257, 0, 0, 0, 0, 0, 0, -11, -51, -319
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs", "C#", -16, 0, 0, 0, 0, 0, 0, 0, -2, -18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs", "C#", -28, 0, 0, 0, 0, 0, 0, 0, -2, -30
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\Legacy\LegacyRVOControllerEditor2.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -2, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\Legacy\LegacyRichAIEditor2.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -2, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs", "C#", -26, 0, 0, 0, 0, 0, 0, 0, -6, -32
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs", "C#", -39, 0, 0, 0, 0, 0, 0, 0, -7, -46
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\NavmeshAddEditor.cs", "C#", -59, 0, 0, 0, 0, 0, 0, -2, -10, -71
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\NavmeshCutEditor.cs", "C#", -70, 0, 0, 0, 0, 0, 0, -2, -13, -85
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs", "C#", -23, 0, 0, 0, 0, 0, 0, -1, -5, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\RVOControllerEditor.cs", "C#", -56, 0, 0, 0, 0, 0, 0, 0, -9, -65
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\RVONavmeshEditor.cs", "C#", -10, 0, 0, 0, 0, 0, 0, 0, -2, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\RVOSimulatorEditor.cs", "C#", -22, 0, 0, 0, 0, 0, 0, 0, -3, -25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\RVOSquareObstacleEditor.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -2, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\RecastMeshObjEditor.cs", "C#", -54, 0, 0, 0, 0, 0, 0, 0, -11, -65
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Editor\SeekerEditor.cs", "C#", -116, 0, 0, 0, 0, 0, 0, -4, -22, -142
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Base.cs", "C#", -291, 0, 0, 0, 0, 0, 0, -314, -95, -700
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\GridGenerator.cs", "C#", -1408, 0, 0, 0, 0, 0, 0, -971, -415, -2794
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\LayerGridGraphGenerator.cs", "C#", -877, 0, 0, 0, 0, 0, 0, -206, -237, -1320
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NavMeshGenerator.cs", "C#", -161, 0, 0, 0, 0, 0, 0, -60, -52, -273
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NavmeshBase.cs", "C#", -950, 0, 0, 0, 0, 0, 0, -464, -266, -1680
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs", "C#", -561, 0, 0, 0, 0, 0, 0, -181, -145, -887
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NodeClasses\GridNodeBase.cs", "C#", -207, 0, 0, 0, 0, 0, 0, -98, -58, -363
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NodeClasses\PointNode.cs", "C#", -146, 0, 0, 0, 0, 0, 0, -86, -41, -273
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\NodeClasses\TriangleMeshNode.cs", "C#", -250, 0, 0, 0, 0, 0, 0, -120, -91, -461
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\PointGenerator.cs", "C#", -435, 0, 0, 0, 0, 0, 0, -223, -109, -767
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\QuadtreeGraph.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\RecastGenerator.cs", "C#", -471, 0, 0, 0, 0, 0, 0, -372, -152, -995
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\BBTree.cs", "C#", -359, 0, 0, 0, 0, 0, 0, -103, -86, -548
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\EuclideanEmbedding.cs", "C#", -279, 0, 0, 0, 0, 0, 0, -93, -69, -441
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\GraphTransform.cs", "C#", -141, 0, 0, 0, 0, 0, 0, -43, -32, -216
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\GridLookup.cs", "C#", -132, 0, 0, 0, 0, 0, 0, -35, -26, -193
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\NavmeshTile.cs", "C#", -38, 0, 0, 0, 0, 0, 0, -18, -21, -77
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs", "C#", -212, 0, 0, 0, 0, 0, 0, -15, -17, -244
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\PointKDTree.cs", "C#", -212, 0, 0, 0, 0, 0, 0, -53, -45, -310
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\RecastBBTree.cs", "C#", -125, 0, 0, 0, 0, 0, 0, -27, -33, -185
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\RecastMeshGatherer.cs", "C#", -384, 0, 0, 0, 0, 0, 0, -75, -112, -571
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\RecastMeshObj.cs", "C#", -89, 0, 0, 0, 0, 0, 0, -57, -32, -178
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\TileHandler.cs", "C#", -714, 0, 0, 0, 0, 0, 0, -258, -219, -1191
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\DebugUtility.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelClasses.cs", "C#", -354, 0, 0, 0, 0, 0, 0, -101, -99, -554
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelContour.cs", "C#", -621, 0, 0, 0, 0, 0, 0, -82, -170, -873
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelMesh.cs", "C#", -217, 0, 0, 0, 0, 0, 0, -73, -64, -354
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelPolygonClipper.cs", "C#", -122, 0, 0, 0, 0, 0, 0, -45, -35, -202
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelRasterization.cs", "C#", -533, 0, 0, 0, 0, 0, 0, -159, -196, -888
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelRegion.cs", "C#", -476, 0, 0, 0, 0, 0, 0, -78, -157, -711
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Generators\Utilities\Voxels\VoxelUtility.cs", "C#", -39, 0, 0, 0, 0, 0, 0, -8, -11, -58
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyAIPathEditor.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyEditorHelper.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyRVOControllerEditor.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\Editor\LegacyRichAIEditor.cs", "C#", 0, 0, 0, 0, 0, 0, 0, -3, -2, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\LegacyAIPath.cs", "C#", -148, 0, 0, 0, 0, 0, 0, -99, -53, -300
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\LegacyRVOController.cs", "C#", -26, 0, 0, 0, 0, 0, 0, -20, -10, -56
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\LegacyRichAI.cs", "C#", -176, 0, 0, 0, 0, 0, 0, -64, -52, -292
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Legacy\MiscLegacy.cs", "C#", -63, 0, 0, 0, 0, 0, 0, -71, -19, -153
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\AdvancedSmooth.cs", "C#", -387, 0, 0, 0, 0, 0, 0, -44, -130, -561
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\AlternativePath.cs", "C#", -62, 0, 0, 0, 0, 0, 0, -17, -18, -97
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\FunnelModifier.cs", "C#", -51, 0, 0, 0, 0, 0, 0, -47, -11, -109
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\Modifiers.cs", "C#", -48, 0, 0, 0, 0, 0, 0, -26, -16, -90
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\RadiusModifier.cs", "C#", -173, 0, 0, 0, 0, 0, 0, -72, -40, -285
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\RaycastModifier.cs", "C#", -200, 0, 0, 0, 0, 0, 0, -90, -41, -331
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs", "C#", -235, 0, 0, 0, 0, 0, 0, -52, -80, -367
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Modifiers\StartEndModifier.cs", "C#", -126, 0, 0, 0, 0, 0, 0, -124, -36, -286
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Navmesh\NavmeshAdd.cs", "C#", -139, 0, 0, 0, 0, 0, 0, -71, -38, -248
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Navmesh\NavmeshCut.cs", "C#", -264, 0, 0, 0, 0, 0, 0, -178, -82, -524
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Navmesh\NavmeshUpdates.cs", "C#", -156, 0, 0, 0, 0, 0, 0, -85, -44, -285
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Navmesh\RelevantGraphSurface.cs", "C#", -67, 0, 0, 0, 0, 0, 0, -11, -17, -95
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Navmesh\TileHandlerHelper.cs", "C#", -22, 0, 0, 0, 0, 0, 0, -9, -5, -36
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\Editor\EditorBase.cs", "C#", -200, 0, 0, 0, 0, 0, 0, -9, -38, -247
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\Editor\EditorGUIx.cs", "C#", -164, 0, 0, 0, 0, 0, 0, -39, -43, -246
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\Editor\EnumFlagDrawer.cs", "C#", -32, 0, 0, 0, 0, 0, 0, -3, -5, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\Editor\OptimizationHandler.cs", "C#", -122, 0, 0, 0, 0, 0, 0, -13, -21, -156
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\EnumFlagAttribute.cs", "C#", -5, 0, 0, 0, 0, 0, 0, -1, -2, -8
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\UniqueComponentAttribute.cs", "C#", -6, 0, 0, 0, 0, 0, 0, 0, -1, -7
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\PackageTools\VersionedMonoBehaviour.cs", "C#", -31, 0, 0, 0, 0, 0, 0, -12, -11, -54
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\ABPath.cs", "C#", -390, 0, 0, 0, 0, 0, 0, -259, -108, -757
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\ConstantPath.cs", "C#", -118, 0, 0, 0, 0, 0, 0, -74, -41, -233
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\FleePath.cs", "C#", -15, 0, 0, 0, 0, 0, 0, -40, -5, -60
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\FloodPath.cs", "C#", -123, 0, 0, 0, 0, 0, 0, -71, -39, -233
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\FloodPathTracer.cs", "C#", -64, 0, 0, 0, 0, 0, 0, -30, -18, -112
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\MultiTargetPath.cs", "C#", -453, 0, 0, 0, 0, 0, 0, -124, -123, -700
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\RandomPath.cs", "C#", -153, 0, 0, 0, 0, 0, 0, -73, -57, -283
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Pathfinders\XPath.cs", "C#", -97, 0, 0, 0, 0, 0, 0, -100, -31, -228
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\RVO\RVOController.cs", "C#", -235, 0, 0, 0, 0, 0, 0, -232, -60, -527
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\RVO\RVONavmesh.cs", "C#", -71, 0, 0, 0, 0, 0, 0, -30, -17, -118
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\RVO\RVOObstacle.cs", "C#", -162, 0, 0, 0, 0, 0, 0, -98, -55, -315
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\RVO\RVOSimulator.cs", "C#", -116, 0, 0, 0, 0, 0, 0, -56, -25, -197
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\RVO\RVOSquareObstacle.cs", "C#", -41, 0, 0, 0, 0, 0, 0, -5, -10, -56
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\TurnBased\BlockManager.cs", "C#", -97, 0, 0, 0, 0, 0, 0, -49, -24, -170
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\TurnBased\SingleNodeBlocker.cs", "C#", -32, 0, 0, 0, 0, 0, 0, -30, -8, -70
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\AnimationLinkTraverser.cs", "C#", -47, 0, 0, 0, 0, 0, 0, -14, -14, -75
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\AstarChecksum.cs", "C#", -12, 0, 0, 0, 0, 0, 0, -6, -4, -22
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\AstarMemory.cs", "C#", -50, 0, 0, 0, 0, 0, 0, -48, -12, -110
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\AstarParallel.cs", "C#", -72, 0, 0, 0, 0, 0, 0, -25, -11, -108
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\AstarProfiler.cs", "C#", -145, 0, 0, 0, 0, 0, 0, -45, -36, -226
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\DotNetReplacements.cs", "C#", -118, 0, 0, 0, 0, 0, 0, -11, -35, -164
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\DynamicGridObstacle.cs", "C#", -127, 0, 0, 0, 0, 0, 0, -73, -36, -236
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\Funnel.cs", "C#", -267, 0, 0, 0, 0, 0, 0, -91, -75, -433
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\GraphGizmoHelper.cs", "C#", -125, 0, 0, 0, 0, 0, 0, -18, -22, -165
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs", "C#", -34, 0, 0, 0, 0, 0, 0, -61, -15, -110
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\PathUtilities.cs", "C#", -263, 0, 0, 0, 0, 0, 0, -193, -81, -537
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\ProceduralGridMover.cs", "C#", -199, 0, 0, 0, 0, 0, 0, -133, -50, -382
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\ProfileHelper.cs", "C#", -99, 0, 0, 0, 0, 0, 0, -5, -20, -124
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\RetainedGizmos.cs", "C#", -243, 0, 0, 0, 0, 0, 0, -80, -54, -377
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs", "C#", -30, 0, 0, 0, 0, 0, 0, -6, -5, -41
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\link.xml", "XML", 0, 0, 0, 0, 0, -22, 0, 0, 0, -22
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\AstarPathfindingProject\package.json", "JSON", 0, -42, 0, 0, 0, 0, 0, 0, 0, -42
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader", "ShaderLab", 0, 0, -86, 0, 0, 0, 0, -5, -19, -110
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs", "C#", -98, 0, 0, 0, 0, 0, 0, -80, -25, -203
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs", "C#", -109, 0, 0, 0, 0, 0, 0, -18, -20, -147
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs", "C#", -137, 0, 0, 0, 0, 0, 0, -60, -20, -217
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs", "C#", -125, 0, 0, 0, 0, 0, 0, -51, -18, -194
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs", "C#", -63, 0, 0, 0, 0, 0, 0, -17, -14, -94
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs", "C#", -390, 0, 0, 0, 0, 0, 0, -203, -70, -663
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs", "C#", -264, 0, 0, 0, 0, 0, 0, -99, -41, -404
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs", "C#", -123, 0, 0, 0, 0, 0, 0, -27, -18, -168
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Base\Joystick.cs", "C#", -130, 0, 0, 0, 0, 0, 0, 0, -20, -150
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Editor\DynamicJoystickEditor.cs", "C#", -30, 0, 0, 0, 0, 0, 0, 0, -5, -35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Editor\FloatingJoystickEditor.cs", "C#", -19, 0, 0, 0, 0, 0, 0, 0, -2, -21
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Editor\JoystickEditor.cs", "C#", -55, 0, 0, 0, 0, 0, 0, 0, -9, -64
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs", "C#", -31, 0, 0, 0, 0, 0, 0, 0, -6, -37
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs", "C#", -35, 0, 0, 0, 0, 0, 0, 0, -6, -41
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs", "C#", -6, 0, 0, 0, 0, 0, 0, 0, -2, -8
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -3, -26
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs", "C#", -53, 0, 0, 0, 0, 0, 0, 0, -10, -63
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Readme.md", "Markdown", 0, 0, 0, 0, -13, 0, 0, 0, -2, -15
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\Examples\BasicUsageExample.cs", "C#", -81, 0, 0, 0, 0, 0, 0, -12, -8, -101
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\Examples\Behaviours\ExampleMonoBehaviour.cs", "C#", -20, 0, 0, 0, 0, 0, 0, -9, -8, -37
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\Examples\Data Objects\DummyGameItem.cs", "C#", -65, 0, 0, 0, 0, 0, 0, -7, -5, -77
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\Examples\ScriptableObjects\ExampleScriptableObject.cs", "C#", -34, 0, 0, 0, 0, 0, 0, -16, -5, -55
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\SerializableDictionary.cs", "C#", -122, 0, 0, 0, 0, 0, 0, -86, -21, -229
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\Native SerializableDictionary [Classless]\Scripts\SerializableKVP.cs", "C#", -72, 0, 0, 0, 0, 0, 0, -19, -4, -95
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\README.html", "HTML", 0, 0, 0, 0, 0, 0, -1584, 0, -64, -1648
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\AllowNestingAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\AnimatorParamAttribute.cs", "C#", -21, 0, 0, 0, 0, 0, 0, 0, -4, -25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\CurveRangeAttribute.cs", "C#", -26, 0, 0, 0, 0, 0, 0, 0, -5, -31
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\DrawerAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, -3, -2, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\DropdownAttribute.cs", "C#", -47, 0, 0, 0, 0, 0, 0, 0, -11, -58
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\EnumFlagsAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\Expandable.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\HorizontalLineAttribute.cs", "C#", -17, 0, 0, 0, 0, 0, 0, 0, -4, -21
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\InfoBoxAttribute.cs", "C#", -21, 0, 0, 0, 0, 0, 0, 0, -4, -25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\InputAxisAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\LayerAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\MinMaxSliderAttribute.cs", "C#", -15, 0, 0, 0, 0, 0, 0, 0, -3, -18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\ProgressBarAttribute.cs", "C#", -32, 0, 0, 0, 0, 0, 0, 0, -6, -38
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\ResizableTextAreaAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\SceneAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\ShowAssetPreviewAttribute.cs", "C#", -17, 0, 0, 0, 0, 0, 0, 0, -4, -21
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\SortingLayerAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -1, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes\TagAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes_SpecialCase\ButtonAttribute.cs", "C#", -21, 0, 0, 0, 0, 0, 0, -9, -4, -34
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes_SpecialCase\ReorderableListAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes_SpecialCase\ShowNativePropertyAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes_SpecialCase\ShowNonSerializedFieldAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -2, -10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\DrawerAttributes_SpecialCase\SpecialCaseDrawerAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, 0, -2, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\INaughtyAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, 0, -2, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\BoxGroupAttribute.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -3, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\DisableIfAttribute.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -4, -27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\EnableIfAttribute.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -4, -27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\EnableIfAttributeBase.cs", "C#", -30, 0, 0, 0, 0, 0, 0, -3, -7, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\FoldoutAttribute.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -3, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\HideIfAttribute.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -4, -27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\IGroupAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, 0, -2, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\LabelAttribute.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -3, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\MetaAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, 0, -2, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\OnValueChangedAttribute.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -3, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\ReadOnlyAttribute.cs", "C#", -8, 0, 0, 0, 0, 0, 0, 0, -3, -11
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\ShowIfAttribute.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -4, -27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\MetaAttributes\ShowIfAttributeBase.cs", "C#", -30, 0, 0, 0, 0, 0, 0, -3, -7, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\Utility\EColor.cs", "C#", -54, 0, 0, 0, 0, 0, 0, 0, -3, -57
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\Utility\EConditionOperator.cs", "C#", -9, 0, 0, 0, 0, 0, 0, 0, -2, -11
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\ValidatorAttributes\MaxValueAttribute.cs", "C#", -17, 0, 0, 0, 0, 0, 0, 0, -4, -21
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\ValidatorAttributes\MinValueAttribute.cs", "C#", -17, 0, 0, 0, 0, 0, 0, 0, -4, -21
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\ValidatorAttributes\RequiredAttribute.cs", "C#", -13, 0, 0, 0, 0, 0, 0, 0, -3, -16
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\ValidatorAttributes\ValidateInputAttribute.cs", "C#", -15, 0, 0, 0, 0, 0, 0, 0, -3, -18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Core\ValidatorAttributes\ValidatorAttribute.cs", "C#", -7, 0, 0, 0, 0, 0, 0, 0, -2, -9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\DecoratorDrawers\HorizontalLineDecoratorDrawer.cs", "C#", -21, 0, 0, 0, 0, 0, 0, 0, -3, -24
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\DecoratorDrawers\InfoBoxDecoratorDrawer.cs", "C#", -49, 0, 0, 0, 0, 0, 0, 0, -11, -60
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\NaughtyInspector.cs", "C#", -189, 0, 0, 0, 0, 0, 0, -3, -30, -222
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\AllowNestingPropertyDrawer.cs", "C#", -15, 0, 0, 0, 0, 0, 0, 0, -2, -17
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\AnimatorParamPropertyDrawer.cs", "C#", -146, 0, 0, 0, 0, 0, 0, 0, -28, -174
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\CurveRangePropertyDrawer.cs", "C#", -39, 0, 0, 0, 0, 0, 0, -1, -8, -48
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\DropdownPropertyDrawer.cs", "C#", -142, 0, 0, 0, 0, 0, 0, -5, -30, -177
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\EnumFlagsPropertyDrawer.cs", "C#", -33, 0, 0, 0, 0, 0, 0, 0, -6, -39
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\ExpandablePropertyDrawer.cs", "C#", -167, 0, 0, 0, 0, 0, 0, -3, -26, -196
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\InputAxisPropertyDrawer.cs", "C#", -61, 0, 0, 0, 0, 0, 0, -4, -13, -78
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\LayerPropertyDrawer.cs", "C#", -75, 0, 0, 0, 0, 0, 0, 0, -14, -89
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\MinMaxSliderPropertyDrawer.cs", "C#", -86, 0, 0, 0, 0, 0, 0, -2, -20, -108
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\ProgressBarPropertyDrawer.cs", "C#", -123, 0, 0, 0, 0, 0, 0, -5, -27, -155
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\PropertyDrawerBase.cs", "C#", -74, 0, 0, 0, 0, 0, 0, -4, -17, -95
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\ResizableTextAreaPropertyDrawer.cs", "C#", -69, 0, 0, 0, 0, 0, 0, 0, -12, -81
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\ScenePropertyDrawer.cs", "C#", -85, 0, 0, 0, 0, 0, 0, 0, -15, -100
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\ShowAssetPreviewPropertyDrawer.cs", "C#", -96, 0, 0, 0, 0, 0, 0, 0, -15, -111
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\SortingLayerPropertyDrawer.cs", "C#", -78, 0, 0, 0, 0, 0, 0, 0, -14, -92
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers\TagPropertyDrawer.cs", "C#", -49, 0, 0, 0, 0, 0, 0, -5, -9, -63
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers_SpecialCase\ReorderableListPropertyDrawer.cs", "C#", -172, 0, 0, 0, 0, 0, 0, -1, -33, -206
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyDrawers_SpecialCase\SpecialCasePropertyDrawerBase.cs", "C#", -60, 0, 0, 0, 0, 0, 0, -4, -11, -75
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyValidators\MaxValuePropertyValidator.cs", "C#", -51, 0, 0, 0, 0, 0, 0, 0, -3, -54
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyValidators\MinValuePropertyValidator.cs", "C#", -51, 0, 0, 0, 0, 0, 0, 0, -3, -54
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyValidators\PropertyValidatorBase.cs", "C#", -34, 0, 0, 0, 0, 0, 0, 0, -5, -39
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyValidators\RequiredPropertyValidator.cs", "C#", -28, 0, 0, 0, 0, 0, 0, 0, -4, -32
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\PropertyValidators\ValidateInputPropertyValidator.cs", "C#", -70, 0, 0, 0, 0, 0, 0, 0, -7, -77
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\Utility\ButtonUtility.cs", "C#", -49, 0, 0, 0, 0, 0, 0, 0, -7, -56
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\Utility\NaughtyEditorGUI.cs", "C#", -317, 0, 0, 0, 0, 0, 0, -20, -44, -381
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\Utility\PropertyUtility.cs", "C#", -299, 0, 0, 0, 0, 0, 0, -20, -56, -375
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\Utility\ReflectionUtility.cs", "C#", -103, 0, 0, 0, 0, 0, 0, -6, -20, -129
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Editor\Utility\SavedBool.cs", "C#", -30, 0, 0, 0, 0, 0, 0, 0, -4, -34
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\AnimatorParamTest.cs", "C#", -41, 0, 0, 0, 0, 0, 0, 0, -13, -54
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\BoxGroupTest.cs", "C#", -27, 0, 0, 0, 0, 0, 0, 0, -6, -33
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ButtonTest.cs", "C#", -34, 0, 0, 0, 0, 0, 0, 0, -6, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\CurveRangeTest.cs", "C#", -29, 0, 0, 0, 0, 0, 0, 0, -9, -38
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\DisableIfTest.cs", "C#", -98, 0, 0, 0, 0, 0, 0, 0, -23, -121
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\DropdownTest.cs", "C#", -37, 0, 0, 0, 0, 0, 0, 0, -9, -46
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\EnableIfTest.cs", "C#", -98, 0, 0, 0, 0, 0, 0, 0, -23, -121
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\EnumFlagsTest.cs", "C#", -33, 0, 0, 0, 0, 0, 0, 0, -7, -40
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ExpandableTest.cs", "C#", -24, 0, 0, 0, 0, 0, 0, -1, -7, -32
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\FoldoutTest.cs", "C#", -27, 0, 0, 0, 0, 0, 0, 0, -6, -33
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\HideIfTest.cs", "C#", -97, 0, 0, 0, 0, 0, 0, 0, -23, -120
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\HorizontalLineTest.cs", "C#", -46, 0, 0, 0, 0, 0, 0, 0, -6, -52
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\InfoBoxTest.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -6, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\InputAxisTest.cs", "C#", -28, 0, 0, 0, 0, 0, 0, 0, -7, -35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\LabelTest.cs", "C#", -25, 0, 0, 0, 0, 0, 0, 0, -6, -31
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\LayerTest.cs", "C#", -37, 0, 0, 0, 0, 0, 0, 0, -10, -47
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\MinMaxSliderTest.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -6, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\MinMaxValueTest.cs", "C#", -97, 0, 0, 0, 0, 0, 0, 0, -33, -130
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\OnValueChangedTest.cs", "C#", -42, 0, 0, 0, 0, 0, 0, 0, -10, -52
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ProgressBarTest.cs", "C#", -29, 0, 0, 0, 0, 0, 0, 0, -7, -36
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ReadOnlyTest.cs", "C#", -25, 0, 0, 0, 0, 0, 0, 0, -6, -31
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ReorderableListTest.cs", "C#", -27, 0, 0, 0, 0, 0, 0, 0, -8, -35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\RequiredTest.cs", "C#", -25, 0, 0, 0, 0, 0, 0, 0, -6, -31
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ResizableTextAreaTest.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -6, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\SceneTest.cs", "C#", -23, 0, 0, 0, 0, 0, 0, 0, -6, -29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ShowAssetPreviewTest.cs", "C#", -29, 0, 0, 0, 0, 0, 0, 0, -9, -38
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ShowIfTest.cs", "C#", -97, 0, 0, 0, 0, 0, 0, 0, -23, -120
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ShowNativePropertyTest.cs", "C#", -71, 0, 0, 0, 0, 0, 0, 0, -9, -80
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ShowNonSerializedFieldTest.cs", "C#", -25, 0, 0, 0, 0, 0, 0, 0, -9, -34
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\SortingLayerTest.cs", "C#", -37, 0, 0, 0, 0, 0, 0, 0, -10, -47
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\TagTest.cs", "C#", -28, 0, 0, 0, 0, 0, 0, 0, -7, -35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\ValidateInputTest.cs", "C#", -42, 0, 0, 0, 0, 0, 0, 0, -11, -53
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\_NaughtyComponent.cs", "C#", -16, 0, 0, 0, 0, 0, 0, 0, -4, -20
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\_NaughtyScriptableObject.cs", "C#", -10, 0, 0, 0, 0, 0, 0, -1, -2, -13
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\_TestScriptableObjectA.cs", "C#", -10, 0, 0, 0, 0, 0, 0, -1, -1, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\Scripts\Test\_TestScriptableObjectB.cs", "C#", -10, 0, 0, 0, 0, 0, 0, -1, -1, -12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\NaughtyAttributes\package.json", "JSON", 0, -21, 0, 0, 0, 0, 0, 0, -1, -22
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\PlayerPrefsExtra\PlayerPrefsExtra.cs", "C#", -129, 0, 0, 0, 0, 0, 0, -11, -48, -188
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\SmartTimersManager\ScriptExamples\BlueLightFlicker.cs", "C#", -17, 0, 0, 0, 0, 0, 0, -1, -5, -23
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\SmartTimersManager\ScriptExamples\RedLightFlicker.cs", "C#", -14, 0, 0, 0, 0, 0, 0, 0, -4, -18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\SmartTimersManager\TimerManager\GUI_TimersList.cs", "C#", -11, 0, 0, 0, 0, 0, 0, 0, -3, -14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\SmartTimersManager\TimerManager\Timer.cs", "C#", -89, 0, 0, 0, 0, 0, 0, -51, -35, -175
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\SmartTimersManager\TimerManager\TimersManager.cs", "C#", -134, 0, 0, 0, 0, 0, 0, -90, -32, -256
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader", "ShaderLab", 0, 0, -109, 0, 0, 0, 0, -2, -33, -144
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader", "ShaderLab", 0, 0, -112, 0, 0, 0, 0, -3, -31, -146
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_Bitmap.shader", "ShaderLab", 0, 0, -109, 0, 0, 0, 0, -2, -33, -144
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF Overlay.shader", "ShaderLab", 0, 0, -243, 0, 0, 0, 0, -4, -71, -318
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF SSD.shader", "ShaderLab", 0, 0, -241, 0, 0, 0, 0, -4, -66, -311
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader", "ShaderLab", 0, 0, -188, 0, 0, 0, 0, -10, -50, -248
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader", "ShaderLab", 0, 0, -183, 0, 0, 0, 0, -8, -50, -241
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader", "ShaderLab", 0, 0, -82, 0, 0, 0, 0, -4, -21, -107
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader", "ShaderLab", 0, 0, -183, 0, 0, 0, 0, -8, -50, -241
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader", "ShaderLab", 0, 0, -103, 0, 0, 0, 0, -8, -28, -139
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF-Surface.shader", "ShaderLab", 0, 0, -122, 0, 0, 0, 0, -4, -33, -159
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_SDF.shader", "ShaderLab", 0, 0, -243, 0, 0, 0, 0, -4, -71, -318
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMP_Sprite.shader", "ShaderLab", 0, 0, -97, 0, 0, 0, 0, 0, -20, -117
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMPro.cginc", "HLSL", 0, 0, 0, -63, 0, 0, 0, -2, -20, -85
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMPro_Mobile.cginc", "HLSL", 0, 0, 0, -122, 0, 0, 0, -2, -34, -158
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMPro_Properties.cginc", "HLSL", 0, 0, 0, -62, 0, 0, 0, -10, -14, -86
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Shaders\TMPro_Surface.cginc", "HLSL", 0, 0, 0, -76, 0, 0, 0, -7, -19, -102
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Plugins\TextMesh Pro\Sprites\EmojiOne.json", "JSON", 0, -155, 0, 0, 0, 0, 0, 0, -2, -157
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\AchievementSystem\Achievement.cs", "C#", -3, 0, 0, 0, 0, 0, 0, -1, -1, -5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\AchievementSystem\AchievementsManager.cs", "C#", 5, 0, 0, 0, 0, 0, 0, -1, 0, 4
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\AchievementSystem\AchievementsManagerList.cs", "C#", -21, 0, 0, 0, 0, 0, 0, 0, -10, -31
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Animals\WanderController.cs", "C#", 1, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\CameraMechanics\CameraFollowPlayer.cs", "C#", 7, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\CameraMechanics\CameraWaveBehaviour.cs", "C#", 43, 0, 0, 0, 0, 0, 0, 3, 13, 59
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\EventManager.cs", "C#", 3, 0, 0, 0, 0, 0, 0, 0, -1, 2
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\FPSSetter.cs", "C#", 16, 0, 0, 0, 0, 0, 0, 0, 2, 18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\FeedbackManager.cs", "C#", 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\GameData.cs", "C#", 12, 0, 0, 0, 0, 0, 0, 3, 5, 20
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\GameDataManager.cs", "C#", 26, 0, 0, 0, 0, 0, 0, 0, 9, 35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\GameManager.cs", "C#", 1, 0, 0, 0, 0, 0, 0, -2, -1, -2
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\LeashBehaviours\LeashBase.cs", "C#", -5, 0, 0, 0, 0, 0, 0, 5, 0, 0
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\LeashBehaviours\LeashColors.cs", "C#", 17, 0, 0, 0, 0, 0, 0, 0, 6, 23
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\LeashBehaviours\LeashElastic.cs", "C#", 9, 0, 0, 0, 0, 0, 0, 0, 3, 12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\MapManager.cs", "C#", 96, 0, 0, 0, 0, 0, 0, 3, 19, 118
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\MapZone.cs", "C#", 31, 0, 0, 0, 0, 0, 0, 0, 8, 39
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\ArrowIndicator.cs", "C#", 28, 0, 0, 0, 0, 0, 0, 2, 5, 35
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\CatchController.cs", "C#", 1, 0, 0, 0, 0, 0, 0, -1, 1, 1
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\MoneyGrabber.cs", "C#", 5, 0, 0, 0, 0, 0, 0, -1, 0, 4
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\PlayerAnimatorController.cs", "C#", 4, 0, 0, 0, 0, 0, 0, 0, 1, 5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\PlayerController.cs", "C#", 19, 0, 0, 0, 0, 0, 0, -3, 2, 18
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\PlayerMovement.cs", "C#", -24, 0, 0, 0, 0, 0, 0, -7, -5, -36
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\PlayerMovementBonuses.cs", "C#", 2, 0, 0, 0, 0, 0, 0, -2, 0, 0
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\PlayerVehicleManager.cs", "C#", 57, 0, 0, 0, 0, 0, 0, 0, 15, 72
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\RangeIndicator.cs", "C#", 33, 0, 0, 0, 0, 0, 0, 1, 7, 41
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\VehicleColorController.cs", "C#", 18, 0, 0, 0, 0, 0, 0, 0, 5, 23
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Player\Vehicles\VehicleAnimationBase.cs", "C#", 19, 0, 0, 0, 0, 0, 0, 0, 8, 27
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\ReferenceManager.cs", "C#", 3, 0, 0, 0, 0, 0, 0, 0, 0, 3
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\RescueZone.cs", "C#", 19, 0, 0, 0, 0, 0, 0, 0, 6, 25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\RotationResetter.cs", "C#", 9, 0, 0, 0, 0, 0, 0, 1, 2, 12
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\SceneNavigator.cs", "C#", 31, 0, 0, 0, 0, 0, 0, 0, 6, 37
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\SettingsManager.cs", "C#", 34, 0, 0, 0, 0, 0, 0, 0, 8, 42
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Skins\SkinUI.cs", "C#", 23, 0, 0, 0, 0, 0, 0, 0, 7, 30
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Skins\SkinsManager.cs", "C#", 45, 0, 0, 0, 0, 0, 0, 2, 13, 60
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\Skins\SkinsManagerUI.cs", "C#", 32, 0, 0, 0, 0, 0, 0, 0, 6, 38
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UI\AchievementUI.cs", "C#", 32, 0, 0, 0, 0, 0, 0, 0, 9, 41
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UI\AchievementsManagerUI.cs", "C#", 40, 0, 0, 0, 0, 0, 0, 0, 8, 48
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UI\LoadingScreenManager.cs", "C#", 16, 0, 0, 0, 0, 0, 0, 0, 3, 19
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UI\ToggleUI.cs", "C#", 24, 0, 0, 0, 0, 0, 0, 0, 5, 29
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UpgradeMechanics\UpgradeButton.cs", "C#", 3, 0, 0, 0, 0, 0, 0, 1, 1, 5
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UpgradeMechanics\UpgradeZone.cs", "C#", 20, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UpgradeMechanics\UpgradesManager.cs", "C#", 25, 0, 0, 0, 0, 0, 0, 1, 7, 33
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UpgradeMechanics\Upgrades\SpeedUpgrade.cs", "C#", 8, 0, 0, 0, 0, 0, 0, 0, 2, 10
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\UpgradeMechanics\Upgrades\UpgradeBase.cs", "C#", 2, 0, 0, 0, 0, 0, 0, 0, 0, 2
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\VibrationsManager.cs", "C#", 14, 0, 0, 0, 0, 0, 0, 1, 4, 19
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\WarehouseMechanics\MoneyBehaviour.cs", "C#", 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\WarehouseMechanics\MoneyEjector.cs", "C#", 36, 0, 0, 0, 0, 0, 0, 0, 6, 42
+"c:\Users\Aleksa Petrovic\UnityProjects\NewUnityProjects\AnimalRescue3D\Assets\_Game\Scripts\WarehouseMechanics\MoneyThrower.cs", "C#", 6, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"Total", "-", -42758, -218, -4778, -374, -1913, -22, -16965, -18606, -13685, -99319
