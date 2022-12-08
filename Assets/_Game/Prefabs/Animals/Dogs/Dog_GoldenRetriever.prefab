@@ -1147,6 +1147,7 @@ MonoBehaviour:
   topOfHead: {fileID: 913121803471577345}
   AnimalState: 1
   MoneyWorth: 0
+  animalSize: 0
 --- !u!114 &7694082987467645930
 MonoBehaviour:
   m_ObjectHideFlags: 0

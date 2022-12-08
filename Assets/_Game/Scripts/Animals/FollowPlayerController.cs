@@ -1,23 +1,22 @@
 #pragma warning disable 618
 
 using UnityEngine;
-using UnityEngine.AI;
 using Aezakmi.Player;
 using Pathfinding;
 using Pathfinding.RVO;
-using NaughtyAttributes;
 
 namespace Aezakmi.Animals
 {
     public class FollowPlayerController : MonoBehaviour
     {
+        public Transform targetToFollow;
+
         [SerializeField] private float DistanceToStartWaiting;
 
         private Animator m_animator;
         private Seeker m_seeker;
         private AIPath m_aiPath;
         private RVOController m_rvoController;
-        private Vector3 m_playerPosition;
 
         private void Start()
         {
@@ -32,9 +31,7 @@ namespace Aezakmi.Animals
 
         private void Update()
         {
-            m_playerPosition = PlayerController.Instance.transform.position;
-
-            if (IsPlayerTooClose(m_playerPosition))
+            if (IsPlayerTooClose(targetToFollow.position))
             {
                 m_animator.SetBool("IsRunning", false);
                 m_aiPath.canMove = false;
@@ -45,7 +42,7 @@ namespace Aezakmi.Animals
                 m_aiPath.isStopped = false;
                 m_aiPath.canMove = true;
                 m_aiPath.maxSpeed = PlayerMovement.Instance.TotalMovementSpeed;
-                m_aiPath.destination = m_playerPosition;
+                m_aiPath.destination = targetToFollow.position;
             }
         }
 
@@ -58,5 +55,6 @@ namespace Aezakmi.Animals
         }
 
         public void StopFollowing() => m_aiPath.canMove = false;
+        public void SetTarget(Transform target) => targetToFollow = target;
     }
 }

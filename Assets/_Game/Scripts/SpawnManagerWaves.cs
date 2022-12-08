@@ -13,7 +13,6 @@ namespace Aezakmi
         [SerializeField] private List<Transform> waveSpawnpoints;
         [SerializeField] private List<Transform> waveEndpoints;
         public List<int> rescuesNeededPerWave;
-        public Transform cameraWaveTransform;
         public int totalWaves { get { return animalCountPerWave.Count; } private set { } }
         public int currentWave = 0;
 

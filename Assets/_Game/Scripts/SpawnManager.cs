@@ -21,6 +21,11 @@ namespace Aezakmi
         [SerializeField] private Color gizmosColor = Color.blue;
         [SerializeField] private bool drawGizmos = false;
 
+        [Header("Size Dependent Values")]
+        [SerializeField] private float smallWorth;
+        [SerializeField] private float medWorth;
+        [SerializeField] private float largeWorth;
+
         private float m_spawnHeight = 0;
 
         private static float s_smallScale = 1;

@@ -2,13 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-namespace Aezakmi
+namespace Aezakmi.CameraMechanics
 {
     public class CameraWaveBehaviour : MonoBehaviour
     {
         // We use a list in case we want to incorporate different positions/rotations for each waves.
-        [SerializeField] private List<Vector3> movePositions;
-        [SerializeField] private List<Vector3> moveRotations;
+        [SerializeField] private List<Transform> waveTransforms;
 
         [SerializeField] private float moveDuration;
         [SerializeField] private float waitDuration;
@@ -24,19 +23,19 @@ namespace Aezakmi
 
         private void Update()
         {
-            // if can skip && touched screen
+            // if can skip && touched screen && m_sequence.IsPlaying()
             //  BehaviourFinished()
         }
 
-        private void OnEnable()
+        public void StartBehaviour()
         {
+            if (m_waveSequence.IsActive()) return;
+
             m_previousPosition = transform.localPosition;
             m_previousRotation = transform.localEulerAngles;
 
-            int index = m_count % movePositions.Count;
-
-            Tweener moveToPosition = transform.DOLocalMove(movePositions[index], moveDuration).SetEase(moveEase);
-            Tweener rotateTowardsWave = transform.DOLocalRotate(moveRotations[index], moveDuration).SetEase(rotateEase);
+            Tweener moveToPosition = transform.DOLocalMove(waveTransforms[m_count].position, moveDuration).SetEase(moveEase);
+            Tweener rotateTowardsWave = transform.DOLocalRotate(waveTransforms[m_count].localEulerAngles, moveDuration).SetEase(rotateEase);
             Tweener moveBack = transform.DOLocalMove(m_previousPosition, moveDuration).SetEase(moveEase);
             Tweener rotateBack = transform.DOLocalRotate(m_previousRotation, moveDuration).SetEase(rotateEase);
 
@@ -45,7 +44,8 @@ namespace Aezakmi
                 .OnComplete(BehaviourFinished)
                 .Play();
 
-            m_count++;
+            m_count = (m_count + 1) % waveTransforms.Count;
+            Debug.LogError(m_count);
         }
 
         public void BehaviourFinished()
@@ -53,6 +53,8 @@ namespace Aezakmi
             m_waveSequence.Kill();
             transform.position = m_previousPosition;
             transform.localEulerAngles = m_previousRotation;
+
+            CameraController.Instance.WaveBehaviourFinished();
         }
     }
 }

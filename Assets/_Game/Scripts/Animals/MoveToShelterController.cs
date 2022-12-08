@@ -17,13 +17,11 @@ namespace Aezakmi.Animals
             _animator.SetBool("IsRunning", true);
         }
 
-        private void Start()
+        private void OnEnable()
         {
             m_rvoController = GetComponent<RVOController>();
-            Debug.LogWarning($"Prelayer: {m_rvoController.layer}. Precollider: {m_rvoController.collidesWith}");
             m_rvoController.layer = RVOLayer.MoveToShelter;
-            m_rvoController.collidesWith = RVOLayer.MoveToShelter;
-            Debug.LogWarning($"Prelayer: {m_rvoController.layer}. Precollider: {m_rvoController.collidesWith}");
+            m_rvoController.collidesWith = RVOLayer.Layer9;
         }
 
         public void SetDestination(Vector3 pos)

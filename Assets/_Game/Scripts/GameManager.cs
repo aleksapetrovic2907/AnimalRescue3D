@@ -1,4 +1,7 @@
 using UnityEngine;
+using NaughtyAttributes;
+using Aezakmi.CameraMechanics;
+using Aezakmi.UI;
 
 namespace Aezakmi
 {
@@ -32,6 +35,14 @@ namespace Aezakmi
         {
             if (GameDataManager.Instance == null) return;
             GameDataManager.Instance.gameData.timePlayed += Time.unscaledDeltaTime;
+        }
+
+        [Button]
+        public void StartWave()
+        {
+            SpawnManager.Instance.SendWave();
+            CameraController.Instance.StartWaveBehaviour();
+            WaveMessageUI.Instance.PlayMessage();
         }
     }
 }

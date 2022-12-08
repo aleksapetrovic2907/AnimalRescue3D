@@ -79,6 +79,7 @@ namespace Aezakmi.Player
             animal.tag = GameTags.CaughtAnimal;
 
             AnimalController animalController = animal.GetComponent<AnimalController>();
+            animal.GetComponent<FollowPlayerController>().targetToFollow = transform;
             LeashBase leash = Instantiate(GetSuitableLeash(animalController), rightHand.position, Quaternion.identity, ReferenceManager.Instance.leashesParent).GetComponent<LeashBase>();
 
             var targetHand = IsRightHandCloser(animal) ? rightHand : leftHand;

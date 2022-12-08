@@ -10,6 +10,7 @@ namespace Aezakmi.Animals
         private WanderController _wanderController;
 
         private const float DISTANCE = 1f;
+        private const float ACCEPTED_DISTANCE_TO_END = 3f;
 
         public void SetDestination(Vector3 wanderableAreaPos)
         {
@@ -21,15 +22,16 @@ namespace Aezakmi.Animals
             _seeker = GetComponent<Seeker>();
             _wanderController = GetComponent<WanderController>();
             GetComponent<Animator>().SetBool("IsRunning", true);
-            _seeker.traversableTags |= 2; // be able to move in wave area
+            Debug.Log(_seeker.traversableTags);
+            _seeker.traversableTags |= 4; // be able to move in wave area // 2^n
             _aiPath.destination = wanderableAreaPos;
         }
 
         private void Update()
         {
-            if (_aiPath.reachedDestination)
+            if (_aiPath.remainingDistance <= ACCEPTED_DISTANCE_TO_END)
             {
-                _seeker.traversableTags |= 2;
+                _seeker.traversableTags |= 4;
                 _wanderController.enabled = true;
                 Destroy(this);
             }

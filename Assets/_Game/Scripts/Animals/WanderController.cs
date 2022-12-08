@@ -14,6 +14,8 @@ namespace Aezakmi.Animals
         private Vector3 m_lastCheckedPosition;
         private float m_maxStuckDistance; // If animal travelled distance less than this, it's stuck.
 
+        public static float s_lastAnimalPriority = 0f;
+
         private const float TIME_BEFORE_CHECK_IF_STUCK = 1f;
 
         public const float NODE_SIZE = 1f;
@@ -25,6 +27,8 @@ namespace Aezakmi.Animals
 
         private void Start()
         {
+            s_lastAnimalPriority += .01f;
+            GetComponent<RVOController>().priority = s_lastAnimalPriority;
             m_aiPath = GetComponent<AIPath>();
             m_lastCheckedPosition = transform.position;
             m_maxStuckDistance = m_aiPath.maxSpeed * TIME_BEFORE_CHECK_IF_STUCK * .5f;

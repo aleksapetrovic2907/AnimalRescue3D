@@ -18,15 +18,7 @@ namespace Aezakmi.UpgradeMechanics
         {
             base.Upgrade(levels, isRelative);
             ReferenceManager.Instance.player.transform.localScale += levels * ((GameManager.Instance.scaleOfNextLevel - 1f) / (float)UpgradesManager.Instance.maxUpgrades) * Vector3.one;
-            if (UpgradesManager.Instance.capacityLevelsAtWhichWavesStart.Contains(relativeLevel))
-            {
-                // todo: DO NOT DO IT LIKE THIS, RETARD
-                SpawnManager.Instance.SendWave();
-                Debug.Log("Updated modifier.");
-            }
-
             m_catchController.UpdateCapacity();
-
             UpdateCost();
         }
     }

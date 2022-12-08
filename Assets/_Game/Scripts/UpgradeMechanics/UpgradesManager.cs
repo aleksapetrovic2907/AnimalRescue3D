@@ -21,7 +21,6 @@ namespace Aezakmi.UpgradeMechanics
 
         private void Start()
         {
-            LoadUpgradesData();
             AddButtonEventListeners();
             UpdateShopUI();
         }
@@ -45,19 +44,6 @@ namespace Aezakmi.UpgradeMechanics
         public void Upgrade(int upgradeIndex, int levels, bool isRelative)
         {
             upgrades[upgradeIndex].Upgrade(levels, isRelative);
-        }
-
-        private void LoadUpgradesData()
-        {
-            // if (GameDataManager.Instance == null) return;
-
-            // for (int i = 0; i < upgrades.Count; i++)
-            // {
-            //     var level = GameDataManager.Instance.gameData.upgradeLevels[i] - GameDataManager.Instance.gameData.relativeUpgradeLevels[i];
-            //     upgrades[i].level = level;
-            //     upgrades[i].relativeLevel = 0;
-            //     Upgrade(i, GameDataManager.Instance.gameData.relativeUpgradeLevels[i], true);
-            // }
         }
 
         private void UpdateLeastExpensiveUpgrade()

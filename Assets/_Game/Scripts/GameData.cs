@@ -11,6 +11,7 @@ namespace Aezakmi
         public bool firstTimePlaying = true;
         public bool soundsActive = true;
         public bool vibrationsActive = true;
+        public int timesWaveCameraIsForced = 0;
 
         // Regions
         public string[] regionsTravelledTo;
