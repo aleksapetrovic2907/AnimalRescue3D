@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 namespace Aezakmi
 {
@@ -22,7 +23,9 @@ namespace Aezakmi
         private int m_moneyOnPlatform = 0;
         private Queue<int> m_moneyToThrow = new Queue<int>();
 
-        private const float OFFSET_Y = 0.1f;
+        private const float OFFSET_X = .15f;
+        private const float OFFSET_Z = .15f;
+        private const float OFFSET_Y = 0.3f;
 
         private void Update()
         {
@@ -34,13 +37,14 @@ namespace Aezakmi
             {
                 m_timeSinceLastThrow = 0f;
 
-                var stack = Instantiate(moneyPrefab, spawnPosition, ReferenceManager.Instance.moneyParent).GetComponent<MoneyBehaviour>();
+                var stack = Instantiate(moneyPrefab, spawnPosition.position, Quaternion.identity, ReferenceManager.Instance.moneyParent).GetComponent<MoneyBehaviour>();
                 stack.SetValues(m_moneyToThrow.Dequeue(), GetTargetPosition());
 
                 m_moneyOnPlatform++;
             }
         }
 
+        [Button]
         public void ThrowMoney(int amount = 0)
         {
             if (ReferenceManager.Instance.moneyParent.childCount == 0)
@@ -56,11 +60,15 @@ namespace Aezakmi
             var posX = m_moneyOnPlatform % platformDimensions.x;
             var posY = m_moneyOnPlatform / (platformDimensions.x * platformDimensions.y);
 
+
+            var offsetX = posX == 0 ? 0f : OFFSET_X;
+            var offsetZ = posZ == 0 ? 0f : OFFSET_Z;
+
             var targetPosition = firstLandPosition.position + new Vector3
             (
-                posX * moneyPrefabSize.x,
+                posX * (moneyPrefabSize.x + offsetX),
                 posY * moneyPrefabSize.y + OFFSET_Y,
-                -posZ * moneyPrefabSize.z
+                -posZ * (moneyPrefabSize.z + offsetZ)
             );
 
             return targetPosition;

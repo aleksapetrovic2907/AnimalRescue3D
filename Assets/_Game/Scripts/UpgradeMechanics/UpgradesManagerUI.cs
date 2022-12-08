@@ -22,10 +22,11 @@ namespace Aezakmi.UpgradeMechanics
             for (int i = 0; i < upgradeButtons.Count; i++)
             {
                 var level = upgrades[i].level;
-                var cost = upgrades[i].Cost(level + 1);
+                var cost = upgrades[i].baseCost;
 
                 upgradeButtons[i].UpdateData(level, cost);
-                upgradeButtons[i].SetAffordability(GameManager.Instance.money >= cost);
+                upgradeButtons[i].SetAffordability(GameDataManager.Instance.gameData.money >= cost);
+                if (upgrades[i].relativeLevel == maxUpgrades) upgradeButtons[i].SetMaxedOut();
             }
         }
 

@@ -1,14 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
+using Aezakmi.Tweens;
 
 namespace Aezakmi.AchievementSystem.UI
 {
-    public class AchievementsManagerUI : MonoBehaviour
+    public class AchievementsManagerUI : GloballyAccessibleBase<AchievementsManagerUI>
     {
         [SerializeField] private GameObject achievementsMenu;
         [SerializeField] private GameObject achievementPrefab;
         [SerializeField] private Transform achievementsParent;
+        [SerializeField] private AchievementPopupUI popup;
+        [SerializeField] private GameObject achievedNotification; // Little icon that is on the side of the achievements button.
 
         private List<AchievementUI> achievementUIs = new List<AchievementUI>();
 
@@ -21,13 +24,13 @@ namespace Aezakmi.AchievementSystem.UI
         {
             UpdateMenu();
             achievementsMenu.SetActive(true);
+            achievedNotification.SetActive(false);
         }
 
         public void CloseAchievementsMenu() => achievementsMenu.SetActive(false);
 
         private void LoadMenu()
         {
-            Debug.Log("Achievements count: " + AchievementsManager.Instance.achievements.Count);
             for (int i = 0; i < AchievementsManager.Instance.achievements.Count; i++)
             {
                 var ach = Instantiate(achievementPrefab, achievementsParent).GetComponent<AchievementUI>();
@@ -36,14 +39,19 @@ namespace Aezakmi.AchievementSystem.UI
                 ach.claimButton.onClick.AddListener(delegate { AchievementsManager.Instance.AchievementClaimed(AchievementsManager.Instance.achievements[index]); UpdateMenu(); });
                 achievementUIs.Add(ach);
             }
-            Debug.Log("Added achievements sum: " + achievementUIs.Count.ToString());
         }
 
-        [Button]
         private void UpdateMenu()
         {
             foreach (var ach in achievementUIs)
                 ach.UpdateInfo();
+        }
+
+        public void AchievementAchieved()
+        {
+            // todo: popup achievement unlocked
+            popup.DisplayPopup();
+            achievedNotification.SetActive(true);
         }
     }
 }

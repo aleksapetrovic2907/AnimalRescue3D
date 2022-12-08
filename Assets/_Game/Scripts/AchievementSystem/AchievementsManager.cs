@@ -1,11 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Aezakmi.AchievementSystem.UI;
 
 namespace Aezakmi.AchievementSystem
 {
     public partial class AchievementsManager : SingletonBase<AchievementsManager>
     {
         public List<Achievement> achievements;
+
+        private void Update()
+        {
+            UpdateAchievementsStatus();
+        }
 
         public void UpdateAchievementsStatus()
         {
@@ -14,6 +20,11 @@ namespace Aezakmi.AchievementSystem
                 if (!achievement.achieved)
                 {
                     achievement.UpdateStatus();
+
+                    if (achievement.achieved && AchievementsManagerUI.Instance != null)
+                    {
+                        AchievementsManagerUI.Instance.AchievementAchieved();
+                    }
                 }
             }
         }
@@ -21,12 +32,7 @@ namespace Aezakmi.AchievementSystem
         public void AchievementClaimed(Achievement achievement)
         {
             achievement.claimed = true;
-
-            foreach (var test in achievements)
-            {
-                if(test.claimed == true)
-                    Debug.LogWarning("Works.");
-            }
+            GameDataManager.Instance.gameData.gems += achievement.gemBonus;
         }
     }
 }

@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using NaughtyAttributes;
 
 namespace Aezakmi
 {
@@ -8,5 +7,11 @@ namespace Aezakmi
     {
         public Transform leftHand;
         public Transform rightHand;
+
+        // [Button]
+        // private void FindHands()
+        // {
+        //     Debug.Log(transform.FindChild("Hand_Container_L"));
+        // }
     }
 }

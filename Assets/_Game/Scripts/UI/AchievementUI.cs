@@ -10,9 +10,11 @@ namespace Aezakmi.AchievementSystem.UI
 
         [SerializeField] private TextMeshProUGUI title;
         [SerializeField] private TextMeshProUGUI description;
+        [SerializeField] private Image icon;
         [SerializeField] private TextMeshProUGUI gemBonus;
         [SerializeField] private TextMeshProUGUI completionText;
         [SerializeField] private Slider completion;
+        [SerializeField] private TextMeshProUGUI claimedText;
 
         private Achievement m_achievement;
 
@@ -20,6 +22,7 @@ namespace Aezakmi.AchievementSystem.UI
         {
             m_achievement = achievement;
 
+            icon.sprite = achievement.icon;
             title.text = m_achievement.title;
             description.text = m_achievement.description;
             gemBonus.text = m_achievement.gemBonus.ToString();
@@ -33,8 +36,8 @@ namespace Aezakmi.AchievementSystem.UI
             completionText.text = (Mathf.CeilToInt(percentage * 100f)).ToString() + "%";
             completion.value = percentage;
 
-            bool isClaimable = !(m_achievement.claimed || !m_achievement.achieved);
-            claimButton.gameObject.SetActive(isClaimable);
+            claimButton.interactable = m_achievement.achieved && !m_achievement.claimed;
+            claimedText.text = m_achievement.claimed ? "CLAIMED" : "CLAIM";
         }
     }
 }
