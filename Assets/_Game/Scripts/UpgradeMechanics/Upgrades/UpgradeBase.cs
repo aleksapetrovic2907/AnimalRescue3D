@@ -19,6 +19,7 @@ namespace Aezakmi.UpgradeMechanics
         {
             level = isRelative ? level + levels : levels;
             relativeLevel = isRelative ? relativeLevel + levels : relativeLevel;
+            FeedbackManager.Instance.Upgraded();
         }
 
         /// <summary>
@@ -34,15 +35,10 @@ namespace Aezakmi.UpgradeMechanics
         public virtual void UpdateCost()
         {
             float modifier = 0;
-            switch (SpawnManager.Instance.currentWave)
-            {
-                case 0:
-                    modifier = UpgradesManager.Instance.firstWaveConstant; break;
-                case 1:
-                    modifier = UpgradesManager.Instance.secondWaveConstant; break;
-                case 2:
-                    modifier = UpgradesManager.Instance.thirdWaveConstant; break;
-            }
+
+            if (relativeLevel <= 3) modifier = UpgradesManager.Instance.firstWaveConstant;
+            else if (relativeLevel <= 6) modifier = UpgradesManager.Instance.secondWaveConstant;
+            else modifier = UpgradesManager.Instance.thirdWaveConstant;
 
             baseCost = (int)(baseCost * modifier);
         }

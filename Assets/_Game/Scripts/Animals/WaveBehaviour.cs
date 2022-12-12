@@ -22,9 +22,14 @@ namespace Aezakmi.Animals
             _seeker = GetComponent<Seeker>();
             _wanderController = GetComponent<WanderController>();
             GetComponent<Animator>().SetBool("IsRunning", true);
-            Debug.Log(_seeker.traversableTags);
             _seeker.traversableTags |= 4; // be able to move in wave area // 2^n
             _aiPath.destination = wanderableAreaPos;
+        }
+
+        public void StopWaveBehaviour()
+        {
+            _aiPath.isStopped = true;
+            Destroy(this);
         }
 
         private void Update()

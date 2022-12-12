@@ -11,9 +11,9 @@ namespace Aezakmi.Player
 
         private void UpdateBonuses()
         {
-            // ! var targetTransitioningBonus = GameManager.Instance.IsPlayerTransitioning && MoneyParent.childCount == 0 ? BaseMovementSpeed * SpeedBonusMultiplierWhenTransitioning : 0;
+            var targetTransitioningBonus = GameManager.Instance.isTransitioningLevel && ReferenceManager.Instance.moneyParent.childCount == 0 ? BaseMovementSpeed * SpeedBonusMultiplierWhenTransitioning : 0;
             var targetFullBonus = m_catchController.IsFull() ? BaseMovementSpeed * SpeedBonusMultiplierWhenFull : 0;
-            // ! _isTransitioningSpeedBonus = Mathf.Lerp(_isTransitioningSpeedBonus, targetTransitioningBonus, LerpSpeed * Time.deltaTime);
+            m_isTransitioningSpeedBonus = Mathf.Lerp(m_isTransitioningSpeedBonus, targetTransitioningBonus, LerpSpeed * Time.deltaTime);
             m_isFullSpeedBonus = Mathf.Lerp(m_isFullSpeedBonus, targetFullBonus, LerpSpeed * Time.deltaTime);
         }
     }

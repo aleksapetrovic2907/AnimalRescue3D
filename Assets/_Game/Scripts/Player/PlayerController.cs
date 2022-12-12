@@ -16,6 +16,7 @@ namespace Aezakmi.Player
         private CatchController m_catchController;
         private PlayerMovement m_playerMovement;
         private PlayerAnimatorController m_playerAnimatorController;
+        private PlayerLevelTransitioner m_playerLevelTransitioner;
 
         private bool m_moneyWasThrown = false;
 
@@ -24,11 +25,18 @@ namespace Aezakmi.Player
             m_catchController = GetComponent<CatchController>();
             m_playerMovement = GetComponent<PlayerMovement>();
             m_playerAnimatorController = GetComponent<PlayerAnimatorController>();
+            m_playerLevelTransitioner = GetComponent<PlayerLevelTransitioner>();
         }
 
         private void Update()
         {
             CheckForUpgradeIndicator();
+        }
+
+        public void TransitionToNextLevel()
+        {
+            m_playerLevelTransitioner.enabled = true;
+            ToggleNewLevelIndicator();
         }
 
         #region Indicators

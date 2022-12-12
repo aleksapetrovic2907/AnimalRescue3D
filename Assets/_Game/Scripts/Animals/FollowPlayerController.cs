@@ -4,6 +4,7 @@ using UnityEngine;
 using Aezakmi.Player;
 using Pathfinding;
 using Pathfinding.RVO;
+using Aezakmi.Drone;
 
 namespace Aezakmi.Animals
 {
@@ -17,6 +18,8 @@ namespace Aezakmi.Animals
         private Seeker m_seeker;
         private AIPath m_aiPath;
         private RVOController m_rvoController;
+
+        public bool followingPlayer = true;
 
         private void Start()
         {
@@ -41,7 +44,11 @@ namespace Aezakmi.Animals
                 m_animator.SetBool("IsRunning", true);
                 m_aiPath.isStopped = false;
                 m_aiPath.canMove = true;
-                m_aiPath.maxSpeed = PlayerMovement.Instance.TotalMovementSpeed;
+                if (followingPlayer)
+                    m_aiPath.maxSpeed = PlayerMovement.Instance.TotalMovementSpeed;
+                else
+                    m_aiPath.maxSpeed = DroneMovement.Instance.movementSpeed;
+                    
                 m_aiPath.destination = targetToFollow.position;
             }
         }

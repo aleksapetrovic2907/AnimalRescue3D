@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff863d4b118e914bb655b2f5d7b442e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: {x: 0, y: 8, z: -4.5}
+  offset: {x: 0, y: 14.08, z: -10.501333}
   target: {fileID: 0}
   followSpeed: 12
 --- !u!114 &525308838339278611
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveTransforms:
+  - {fileID: 0}
   - {fileID: 0}
   moveDuration: 1.5
   waitDuration: 1

@@ -35,7 +35,7 @@ namespace Aezakmi
 
         private const int LERP_SPEED = 6;
 
-        private Region? m_selectedRegion;
+        private Region m_selectedRegion;
 
         private void Start()
         {
@@ -118,7 +118,7 @@ namespace Aezakmi
 
         public void ConfirmRegion()
         {
-
+            SceneNavigator.Instance.GoToRegion(m_selectedRegion);
         }
 
         public void ExitMapZone()

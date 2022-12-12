@@ -29,6 +29,7 @@ namespace Aezakmi.Animals
         private WanderController m_wanderController;
         private FollowPlayerController m_followPlayerController;
         private MoveToShelterController m_moveToShelterController;
+        private WaveBehaviour m_waveBehaviour;
         private static int s_percentageToWanderAsInitialState = 80;
 
         private bool m_isPartOfWave = false;
@@ -45,7 +46,10 @@ namespace Aezakmi.Animals
         private void SetRandomState()
         {
             if (m_isPartOfWave)
+            {
+                m_waveBehaviour = GetComponent<WaveBehaviour>();
                 return;
+            }
 
             AnimalState = Random.Range(0f, 100f) < s_percentageToWanderAsInitialState ? AnimalStates.Wandering : AnimalStates.Waiting;
             if (AnimalState == AnimalStates.Wandering)
@@ -57,7 +61,9 @@ namespace Aezakmi.Animals
 
         public void GetCaught()
         {
-            if (AnimalState == AnimalStates.Wandering)
+            if (m_isPartOfWave)
+                m_waveBehaviour.StopWaveBehaviour();
+            else if (AnimalState == AnimalStates.Wandering)
             {
                 m_wanderController.StopWandering();
                 m_wanderController.enabled = false;

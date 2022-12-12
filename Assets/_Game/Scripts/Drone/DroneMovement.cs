@@ -1,35 +1,41 @@
 using UnityEngine;
-using DG.Tweening;
 
 namespace Aezakmi.Drone
 {
-    public class DroneMovement : MonoBehaviour
+    public class DroneMovement : GloballyAccessibleBase<DroneMovement>
     {
-        [SerializeField] private float movementSpeed;
+        public float movementSpeed;
+        [SerializeField] private float rotateSpeed = 3;
+        [SerializeField] private Vector3 originalRotation;
         [SerializeField] private Transform rescueZone;
         [SerializeField] private Transform station;
 
-        [Header("Lift Tween Settings")]
-        [SerializeField] private float moveAmount; // y-axis
-        [SerializeField] private float moveDuration;
-        [SerializeField] private Ease moveEase;
-
-        private Transform m_targetToMoveTo;
+        public Transform target;
+        private const float INFINITESIMAL = .001f;
 
         private void Update()
         {
-            if (m_targetToMoveTo == null) return;
+            if (target == null) return;
+
+            if (Vector3.Distance(transform.position, target.position) <= INFINITESIMAL)
+            {
+                target = null;
+                return;
+            }
+
+            Vector3 direction = (target.position - transform.position).normalized;
+            var eulerAngles = Quaternion.LookRotation(direction).eulerAngles;
+            eulerAngles.x = 0;
+            eulerAngles.z = 0;
+
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(eulerAngles), rotateSpeed * Time.deltaTime);
 
             var step = movementSpeed * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, m_targetToMoveTo.position, step);
+            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
         }
 
-        public void MoveToShelter()
-        {
-            Tween moveUp = transform.DOLocalMoveY(transform.localPosition.y + moveAmount, moveDuration).SetEase(moveEase).OnComplete(delegate
-            {
-                m_targetToMoveTo = rescueZone;
-            });
-        }
+        public void MoveToShelter() => target = rescueZone;
+        public void MoveToStation() => target = station;
+        public void ResetRotation() => transform.localEulerAngles = originalRotation;
     }
 }

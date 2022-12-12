@@ -11,10 +11,13 @@ namespace Aezakmi
         public bool firstTimePlaying = true;
         public bool soundsActive = true;
         public bool vibrationsActive = true;
-        public int timesWaveCameraIsForced = 0;
+        public int timesWaveCameraIsForced = 2;
+        public bool firstLevelFinished = false;
 
-        // Regions
-        public string[] regionsTravelledTo;
+        // Scenes
+        public int[] lastLevelReachedPerRegion = new int[5] { -1, 0, 0, 0, 0 };
+        public bool[] regionsVisited = new bool[5] { false, true, false, false, false };
+        public int lastRegionPlayed = (int)Region.City;
 
         // Player
         public float distanceTravelled = 0f;
@@ -34,5 +37,9 @@ namespace Aezakmi
         public int upgradesBought = 0;
         public int[] upgradeLevels = new int[3]; // Capacity, Range, Speed.
         public int[] relativeUpgradeLevels = new int[3]; // Amount of times upgraded in scene.
+
+        // Drones
+        public int droneCooldownLevel = 0;
+        public int droneCapacityLevel = 0;
     }
 }

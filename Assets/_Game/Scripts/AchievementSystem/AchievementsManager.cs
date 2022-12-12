@@ -24,6 +24,7 @@ namespace Aezakmi.AchievementSystem
                     if (achievement.achieved && AchievementsManagerUI.Instance != null)
                     {
                         AchievementsManagerUI.Instance.AchievementAchieved();
+                        FeedbackManager.Instance.AchievementAchieved();
                     }
                 }
             }

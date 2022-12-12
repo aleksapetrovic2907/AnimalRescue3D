@@ -1,11 +1,9 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using NaughtyAttributes;
 
 using Aezakmi.AchievementSystem;
-using Aezakmi.UpgradeMechanics;
 using Aezakmi.Skins;
 
 namespace Aezakmi
@@ -27,6 +25,7 @@ namespace Aezakmi
             // Since achievements' predicates (requirements) depend on gameData
             // we first initialize the game data and then the achievement data
             AchievementsManager.Instance.LoadAchievements();
+            SceneNavigator.Instance.LoadScenesData();
             SceneNavigator.Instance.LoadLastSavedScene();
         }
 
@@ -46,16 +45,8 @@ namespace Aezakmi
             for (int i = 0; i < AchievementsManager.Instance.achievements.Count; i++)
                 gameData.claimedList[i] = AchievementsManager.Instance.achievements[i].claimed;
 
-            // for (int i = 0; i < gameData.upgradeLevels.Length; i++)
-            //     gameData.upgradeLevels[i] = UpgradesManager.Instance.upgrades[i].level;
-
-            // for (int i = 0; i < gameData.relativeUpgradeLevels.Length; i++)
-            //     gameData.relativeUpgradeLevels[i] = UpgradesManager.Instance.upgrades[i].relativeLevel;
-
             for (int i = 0; i < SkinsManager.Instance.skins.Count; i++)
                 gameData.skinsBought[i] = SkinsManager.Instance.skins[i].bought;
-
-            Debug.LogWarning("Saved data.");
 
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Create(Application.persistentDataPath + SAVEDATA_FILE_NAME);

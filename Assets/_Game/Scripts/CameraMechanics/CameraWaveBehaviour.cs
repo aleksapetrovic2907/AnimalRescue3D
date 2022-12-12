@@ -45,7 +45,6 @@ namespace Aezakmi.CameraMechanics
                 .Play();
 
             m_count = (m_count + 1) % waveTransforms.Count;
-            Debug.LogError(m_count);
         }
 
         public void BehaviourFinished()

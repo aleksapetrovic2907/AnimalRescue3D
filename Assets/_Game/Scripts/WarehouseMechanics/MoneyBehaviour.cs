@@ -39,7 +39,7 @@ namespace Aezakmi
             collider.enabled = false;
             rigidbody.isKinematic = true;
             transform.DOScale(Vector3.zero, s_destroyDuration).SetEase(Ease.OutSine).OnComplete(delegate { Destroy(gameObject); }).Play();
-            audioSource.PlayOneShot(audioClip);
+            FeedbackManager.Instance.CapturedMoney();
         }
     }
 }

@@ -22,9 +22,9 @@ namespace Aezakmi
         [SerializeField] private bool drawGizmos = false;
 
         [Header("Size Dependent Values")]
-        [SerializeField] private float smallWorth;
-        [SerializeField] private float medWorth;
-        [SerializeField] private float largeWorth;
+        [SerializeField] private int smallWorth;
+        [SerializeField] private int medWorth;
+        [SerializeField] private int largeWorth;
 
         private float m_spawnHeight = 0;
 
@@ -41,7 +41,9 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_smallScale * Vector3.one;
-                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Small;
+                    var ac = animal.GetComponent<AnimalController>();
+                    ac.animalSize = AnimalSize.Small;
+                    ac.MoneyWorth = smallWorth;                    
                 }
 
             foreach (var animalData in initialAnimalsMedium)
@@ -49,7 +51,9 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_mediumScale * Vector3.one;
-                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Medium;
+                    var ac = animal.GetComponent<AnimalController>();
+                    ac.animalSize = AnimalSize.Medium;
+                    ac.MoneyWorth = medWorth;
                 }
 
             foreach (var animalData in initialAnimalsLarge)
@@ -57,7 +61,9 @@ namespace Aezakmi
                 {
                     var animal = Instantiate(animalData.Key, RandomPosition(), Quaternion.identity, ReferenceManager.Instance.animalsParent);
                     animal.transform.localScale = s_largeScale * Vector3.one;
-                    animal.GetComponent<AnimalController>().animalSize = AnimalSize.Large;
+                    var ac = animal.GetComponent<AnimalController>();
+                    ac.animalSize = AnimalSize.Large;
+                    ac.MoneyWorth = largeWorth;
                 }
 
         }

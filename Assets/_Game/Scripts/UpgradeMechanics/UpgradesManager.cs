@@ -5,13 +5,15 @@ namespace Aezakmi.UpgradeMechanics
 {
     public partial class UpgradesManager : GloballyAccessibleBase<UpgradesManager>
     {
-        public int maxUpgrades = 7;
+        public int maxUpgrades = 8;
 
         public int baseCost;
         public float firstWaveConstant;
         public float secondWaveConstant;
         public float thirdWaveConstant;
-        public List<int> capacityLevelsAtWhichWavesStart = new List<int>() { 4, 7 };
+
+        // limit upgrading until all upgrades reach levels in list
+        public List<int> levelsAtWhichToLimitUpgrades = new List<int>() { 3, 6 };
 
         public List<UpgradeBase> upgrades = new List<UpgradeBase>();
         [SerializeField] private List<UpgradeButton> upgradeButtons = new List<UpgradeButton>();
@@ -21,6 +23,7 @@ namespace Aezakmi.UpgradeMechanics
 
         private void Start()
         {
+            LoadData();
             AddButtonEventListeners();
             UpdateShopUI();
         }
@@ -62,10 +65,23 @@ namespace Aezakmi.UpgradeMechanics
         {
             foreach (var upgrade in upgrades)
             {
-                if(upgrade.relativeLevel < maxUpgrades) return false;
+                if (upgrade.relativeLevel < maxUpgrades) return false;
             }
 
             return true;
+        }
+
+        private void LoadData()
+        {
+            for (int i = 0; i < upgrades.Count; i++)
+                upgrades[i].level = GameDataManager.Instance.gameData.upgradeLevels[i];
+        }
+
+        // Saved on level complete
+        public void SaveData()
+        {
+            for (int i = 0; i < upgrades.Count; i++)
+                GameDataManager.Instance.gameData.upgradeLevels[i] = upgrades[i].level;
         }
     }
 }

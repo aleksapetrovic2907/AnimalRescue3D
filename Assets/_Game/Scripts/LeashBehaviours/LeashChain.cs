@@ -36,7 +36,7 @@ namespace Aezakmi.LeashBehaviours
                 {
                     var link = Instantiate(linkPrefab, transform.position, Quaternion.identity, transform);
                     link.transform.localPosition = i * m_linkMeshLength * Vector3.up;
-                    link.transform.localEulerAngles = (i % 2) * new Vector3(0, 90, 0); // Rotate every second link by 90 degrees
+                    link.transform.localEulerAngles = new Vector3(90, 0, 0) + (i % 2) * new Vector3(0, 0, 90f); // Rotate every second link by 90 degrees
                     m_links.Add(link);
                 }
             }

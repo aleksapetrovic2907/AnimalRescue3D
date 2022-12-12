@@ -25,8 +25,6 @@ namespace Aezakmi.Player
                 var mb = money.GetComponent<MoneyBehaviour>();
                 GameManager.Instance.AddMoney(mb.value);
                 mb.DestroySelf();
-                // ! var moneyComponent = money.GetComponent<Money>();
-                // ! UpgradeManager.Instance.GrabMoney(moneyComponent.Amount);
                 // ! moneyComponent.DestroySelf();
             }
         }

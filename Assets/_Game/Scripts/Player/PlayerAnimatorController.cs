@@ -7,10 +7,12 @@ namespace Aezakmi.Player
     {
         [SerializeField] private List<Animator> animators;
 
+
         private PlayerMovement m_playerMovement;
         private PlayerVehicleManager m_playerVehicleManager;
 
         private Vehicle m_currentVehicle;
+        private bool m_forcing = false;
 
         private void Start()
         {
@@ -20,6 +22,8 @@ namespace Aezakmi.Player
 
         private void Update()
         {
+            if (m_forcing) return;
+
             foreach (var animator in animators)
                 animator.SetBool("IsMoving", m_playerMovement.IsMoving);
         }
@@ -38,7 +42,14 @@ namespace Aezakmi.Player
                 animator.SetFloat("MoveSpeed", m_currentVehicle.moveSpeed);
                 animator.runtimeAnimatorController = m_currentVehicle.animatorOverrideController;
             }
+        }
 
+        // Force moving animations regardless of PlayerMovements' inputs
+        public void ForceMove(bool IsMoving)
+        {
+            m_forcing = true;
+            foreach (var animator in animators)
+                animator.SetBool("IsMoving", IsMoving);
         }
     }
 }

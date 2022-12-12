@@ -4,10 +4,11 @@ using NativeSerializableDictionary;
 using Aezakmi.UpgradeMechanics;
 using Aezakmi.LeashBehaviours;
 using Aezakmi.Animals;
+using Aezakmi.Drone;
 
 namespace Aezakmi.Player
 {
-    public class CatchController : MonoBehaviour
+    public class CatchController : GloballyAccessibleBase<CatchController>
     {
         [Header("Catch Settings")]
         [SerializeField] private LayerMask raycastLayers;
@@ -28,7 +29,7 @@ namespace Aezakmi.Player
 
         private Collider[] m_hitAnimals;
         private PlayerController m_playerController;
-        private Dictionary<AnimalController, LeashBase> m_animalAndLeash = new Dictionary<AnimalController, LeashBase> { };
+        public Dictionary<AnimalController, LeashBase> animalAndLeash = new Dictionary<AnimalController, LeashBase> { };
         public float raycastRadiusModifier = 7;
 
         private void Start()
@@ -87,7 +88,7 @@ namespace Aezakmi.Player
             leash.end = animalController.neckBand;
 
             animalController.GetCaught();
-            m_animalAndLeash.Add(animalController, leash);
+            animalAndLeash.Add(animalController, leash);
         }
 
         private bool IsRightHandCloser(Transform animal)
@@ -112,12 +113,13 @@ namespace Aezakmi.Player
         {
             currentCapacity[(int)animalController.animalSize]--;
 
-            foreach (var animal in m_animalAndLeash)
+            foreach (var animal in animalAndLeash)
             {
                 if (animal.Key == animalController)
                     Destroy(animal.Value.gameObject);
             }
 
+            animalAndLeash.Remove(animalController);
             m_playerController.ToggleFullIndicator();
         }
 
@@ -126,10 +128,10 @@ namespace Aezakmi.Player
             leftHand = meshHandsController.leftHand;
             rightHand = meshHandsController.rightHand;
 
-            foreach (var m_animalAndLeash in m_animalAndLeash)
+            foreach (var animalAndLeash in animalAndLeash)
             {
-                if (m_animalAndLeash.Key != null)
-                    m_animalAndLeash.Value.origin = IsRightHandCloser(m_animalAndLeash.Key.transform) ? rightHand : leftHand;
+                if (animalAndLeash.Key != null)
+                    animalAndLeash.Value.origin = IsRightHandCloser(animalAndLeash.Key.transform) ? rightHand : leftHand;
             }
         }
 
@@ -143,12 +145,39 @@ namespace Aezakmi.Player
             }
         }
 
+        public void EnteredDroneZone()
+        {
+            if (animalAndLeash.Count == 0) return;
+
+            var amount = Mathf.Min(animalAndLeash.Count, DroneController.Instance.maxCapacity);
+            var animals = new Dictionary<AnimalController, LeashBase>();
+            List<AnimalController> removedAnimals = new List<AnimalController>();
+
+            int count = 0;
+            foreach (var animal in animalAndLeash)
+            {
+                if (count == amount) break;
+
+                animals.Add(animal.Key, animal.Value);
+                currentCapacity[(int)animal.Key.animalSize]--;
+                removedAnimals.Add(animal.Key);
+                count++;
+            }
+
+            for (int i = 0; i < amount; i++)
+                animalAndLeash.Remove(removedAnimals[i]);
+
+            DroneController.Instance.GetAnimals(animals);
+
+            m_playerController.ToggleFullIndicator();
+        }
+
         // todo: replace magic numbers
         public bool IsFull()
         {
             int animalSizeToCheck;
-            if (m_capacityLevel < 4) animalSizeToCheck = 0;
-            else if (m_capacityLevel < 7) animalSizeToCheck = 1;
+            if (SpawnManager.Instance.currentWave == 0) animalSizeToCheck = 0;
+            else if (SpawnManager.Instance.currentWave == 1) animalSizeToCheck = 1;
             else animalSizeToCheck = 2;
 
             return currentCapacity[animalSizeToCheck] == maxCapacity[animalSizeToCheck];

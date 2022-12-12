@@ -665,7 +665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd65ac7518c24940853c0c7d4da191c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetToFollow: {fileID: 0}
   DistanceToStartWaiting: 2
+  followingPlayer: 1
 --- !u!114 &2447699453257355827
 MonoBehaviour:
   m_ObjectHideFlags: 0

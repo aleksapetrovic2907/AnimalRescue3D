@@ -47,5 +47,5 @@ MonoBehaviour:
   leashType: 1
   origin: {fileID: 0}
   end: {fileID: 0}
-  linkPrefab: {fileID: 919132149155446097, guid: 59dac70700133e94b9334d4083abedd4,
+  linkPrefab: {fileID: 2799016260105401197, guid: 8d68e5536980de245bf408e85ef408cb,
     type: 3}

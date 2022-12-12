@@ -3,8 +3,10 @@ using DG.Tweening;
 
 namespace Aezakmi.UI
 {
-    public class ShopUI : MonoBehaviour
+    public class ShopUI : GloballyAccessibleBase<ShopUI>
     {
+        [SerializeField] private GameObject maxAllUpgradesText;
+
         [Header("Tween Settings")]
         [SerializeField] private float moveDuration;
         [SerializeField] private Ease loopEase;
@@ -28,6 +30,11 @@ namespace Aezakmi.UI
         public void Close()
         {
             m_rectTransform.DOAnchorPos(m_downPosition, moveDuration).SetEase(loopEase).Play();
-        }        
+        }
+
+        public void ForceUpgradesText(bool active)
+        {
+            maxAllUpgradesText.SetActive(active);
+        }
     }
 }

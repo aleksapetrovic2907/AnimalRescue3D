@@ -73,6 +73,18 @@ namespace Aezakmi
 
                     var animal = Instantiate(animals.Key, randomSpawn, Quaternion.identity, ReferenceManager.Instance.animalsParent).GetComponent<AnimalController>();
                     animal.SpawnAsWave(randomEnd);
+                    if(currentWave == 0)
+                    {
+                        animal.animalSize = AnimalSize.Medium;
+                        animal.transform.localScale = s_mediumScale * Vector3.one;
+                        animal.MoneyWorth = medWorth;
+                    }
+                    else if(currentWave == 1)
+                    {
+                        animal.animalSize = AnimalSize.Large;
+                        animal.transform.localScale = s_largeScale * Vector3.one;
+                        animal.MoneyWorth = largeWorth;
+                    }
                 }
             }
 

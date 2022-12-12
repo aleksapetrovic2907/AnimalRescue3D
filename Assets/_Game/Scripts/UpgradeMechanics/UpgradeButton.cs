@@ -31,6 +31,13 @@ namespace Aezakmi.UpgradeMechanics
             Background.color = s_greyedOutColor;
         }
 
+        public void SetUnmaxed()
+        {
+            Button.interactable = true;
+            Cost.gameObject.SetActive(true);
+            MaxedOutText.SetActive(false);
+        }
+
         public virtual void SetAffordability(bool isAffordable)
         {
             Button.interactable = isAffordable;

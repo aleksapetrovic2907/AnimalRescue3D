@@ -5,7 +5,7 @@ using NaughtyAttributes;
 
 namespace Aezakmi
 {
-    public class MoneyThrower : MonoBehaviour
+    public class MoneyThrower : GloballyAccessibleBase<MoneyThrower>
     {
         public bool HasMoneyToThrow { get { return m_moneyToThrow.Count > 0; } }
 
