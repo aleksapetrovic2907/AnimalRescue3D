@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4932596579102040090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8808046024408355155}
+  m_Layer: 0
+  m_Name: NeckbandAttachment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8808046024408355155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4932596579102040090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.112, y: -0.568, z: 0.019}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6509692532491210593}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5538713897038339546
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,7 +100,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5538713897367911158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.477, z: 0.857}
+  m_LocalPosition: {x: 0, y: 1.816, z: 1.495}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -649,6 +680,7 @@ Transform:
   - {fileID: 6509407806807696947}
   - {fileID: 6509631457720791421}
   - {fileID: 6509650905101357709}
+  - {fileID: 8808046024408355155}
   m_Father: {fileID: 6509628498713454493}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0.824975, y: -0.36538646, z: 47.318924}
@@ -984,8 +1016,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   leashType: 0
-  neckBand: {fileID: 0}
-  topOfHead: {fileID: 0}
+  neckBand: {fileID: 8808046024408355155}
+  topOfHead: {fileID: 5538713897367911159}
   AnimalState: 1
   MoneyWorth: 0
   animalSize: 0

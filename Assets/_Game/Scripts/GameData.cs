@@ -1,4 +1,3 @@
-using System.Numerics;
 using Aezakmi.AchievementSystem;
 using Aezakmi.Skins;
 
@@ -8,6 +7,7 @@ namespace Aezakmi
     public class GameData
     {
         public int levelReached = 1;
+        public int missionID = 0;
         public bool firstTimePlaying = true;
         public bool soundsActive = true;
         public bool vibrationsActive = true;

@@ -5,6 +5,7 @@ using NaughtyAttributes;
 
 using Aezakmi.AchievementSystem;
 using Aezakmi.Skins;
+using Aezakmi.UpgradeMechanics;
 
 namespace Aezakmi
 {
@@ -14,12 +15,17 @@ namespace Aezakmi
 
         private const string SAVEDATA_FILE_NAME = "/gameData.bin";
 
+//         protected override void Awake()
+//         {
+// #if TTP_ANALYTICS || TTP_REWARDED_INTERSTITIALS || TTP_PRIVACY_SETTINGS || TTP_APPSFLYER || TTP_REWARDED_ADS || TTP_PROMOTION || TTP_INTERSTITIALS || TTP_GAMEPROGRESSION || TTP_RATEUS || TTP_BANNERS || TTP_POPUPMGR || TTP_CRASHTOOL || TTP_OPENADS
+//             Tabtale.TTPlugins.TTPCore.Setup();
+// #endif
+
+//             base.Awake();
+//         }
+
         private void Start()
         {
-#if TTP_ANALYTICS || TTP_REWARDED_INTERSTITIALS || TTP_PRIVACY_SETTINGS || TTP_APPSFLYER || TTP_REWARDED_ADS || TTP_PROMOTION || TTP_INTERSTITIALS || TTP_GAMEPROGRESSION || TTP_RATEUS || TTP_BANNERS || TTP_POPUPMGR || TTP_CRASHTOOL || TTP_OPENADS
-            Tabtale.TTPlugins.TTPCore.Setup();
-#endif
-
             LoadGameData();
 
             // Since achievements' predicates (requirements) depend on gameData
@@ -47,6 +53,9 @@ namespace Aezakmi
 
             for (int i = 0; i < SkinsManager.Instance.skins.Count; i++)
                 gameData.skinsBought[i] = SkinsManager.Instance.skins[i].bought;
+
+            for (int i = 0; i < UpgradesManager.Instance.upgrades.Count; i++)
+                gameData.upgradeLevels[i] = UpgradesManager.Instance.upgrades[i].level;
 
             BinaryFormatter bf = new BinaryFormatter();
             FileStream fs = File.Create(Application.persistentDataPath + SAVEDATA_FILE_NAME);

@@ -4,6 +4,8 @@ using NaughtyAttributes;
 using Aezakmi.CameraMechanics;
 using Aezakmi.UI;
 using Aezakmi.Player;
+using Tabtale.TTPlugins;
+using UnityEngine.SceneManagement;
 
 namespace Aezakmi
 {
@@ -17,6 +19,13 @@ namespace Aezakmi
 
         private List<int> m_animalRescuesNeededToSpawnWave = new List<int>() { 57, 117 };
         private bool m_proceedFlag = false;
+
+        private void Start()
+        {
+            var parameters = new Dictionary<string, object>();
+            parameters.Add("missionName", SceneManager.GetActiveScene().name);
+            TTPGameProgression.FirebaseEvents.MissionStarted(++GameDataManager.Instance.gameData.missionID, parameters);
+        }
 
         public void AddMoney(int value)
         {
@@ -62,9 +71,18 @@ namespace Aezakmi
             LevelCompleteUI.Instance.OpenUI();
         }
 
+        [Button]
         public void ContinueToNextLevel()
         {
             // todo: vidi sta ces sa viskom novca
+            // * resio je cone <3 hvala ti
+
+            var parameters = new Dictionary<string, object>();
+            parameters.Add("missionName", SceneManager.GetActiveScene().name);
+            TTPGameProgression.FirebaseEvents.MissionComplete(parameters);
+
+            GameDataManager.Instance.SaveGameData();
+            SceneNavigator.Instance.GoToNextLevel();
         }
 
         private void CountTimePlayed()

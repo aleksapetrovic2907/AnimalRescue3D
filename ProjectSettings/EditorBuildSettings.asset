@@ -6,24 +6,57 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/QuickSetupScene.unity
+    guid: 0c02a77f54a23bc47b4e8752efceb4c0
+  - enabled: 1
     path: Assets/_Game/_Scenes/01_Preload.unity
     guid: 411a5c54cf56c5d4a871776cbd6cee94
   - enabled: 1
-    path: Assets/_Game/_Scenes/02_Level1.unity
+    path: Assets/_Game/_Scenes/02_Level1 City.unity
     guid: 217c94cc880d2ec49bfdc533b87f964c
-  - enabled: 0
-    path: Assets/_Game/_Scenes/Region1_Scene2.unity
-    guid: 7caf12b3c63bf0744ad64283049bb56f
-  - enabled: 0
-    path: Assets/_Game/_Scenes/Region2_Scene1.unity
-    guid: cb435c60873eccd419075bc9af5d9f60
-  - enabled: 0
-    path: Assets/_Game/_Scenes/Region2_Scene2.unity
-    guid: 82b8f13d98240f04fbb66764e1036c6c
-  - enabled: 0
-    path: Assets/_Game/_Scenes/Region2_Scene3.unity
-    guid: cfb4987644a24bd4187f43507709f63d
-  - enabled: 0
-    path: Assets/_Game/_Scenes/Region2_Scene4.unity
-    guid: d5fadff0a329dc9449e5bd05a6777dd3
+  - enabled: 1
+    path: Assets/_Game/_Scenes/03_Level2 City.unity
+    guid: c0fa4089e2494c34689398d72d163e9d
+  - enabled: 1
+    path: Assets/_Game/_Scenes/04_Level3 City.unity
+    guid: ce6f1d95faa1dd3488bd7cc0a30a7852
+  - enabled: 1
+    path: Assets/_Game/_Scenes/05_Level4 City.unity
+    guid: 5bbc549a3f08e1e47a12f0521639f616
+  - enabled: 1
+    path: Assets/_Game/_Scenes/06_Level5 City.unity
+    guid: 3e2af11073b12e548a72f0ffdbaa87c2
+  - enabled: 1
+    path: Assets/_Game/_Scenes/07_Level6 City.unity
+    guid: ed0ddcba4fa413141b578a77a35d8098
+  - enabled: 1
+    path: Assets/_Game/_Scenes/08_Level1 Safari.unity
+    guid: 5cb87e75a00360d4d997e2eac0a54c1b
+  - enabled: 1
+    path: Assets/_Game/_Scenes/09_Level2 Safari.unity
+    guid: 186f7a2e9146eef448b2edfda4c9fd2d
+  - enabled: 1
+    path: Assets/_Game/_Scenes/10_Level3 Safari.unity
+    guid: 3f5949d6cd2682f46a12c0f010b808ea
+  - enabled: 1
+    path: Assets/_Game/_Scenes/11_Level1 Polar.unity
+    guid: fcdf59480300cfc4998ed034e3e8afce
+  - enabled: 1
+    path: Assets/_Game/_Scenes/12_Level2 Polar.unity
+    guid: 23345c788d70dcb40b9d03a4c6d74722
+  - enabled: 1
+    path: Assets/_Game/_Scenes/13_Level3 Polar.unity
+    guid: 1253620711c400248800e03f7bde7252
+  - enabled: 1
+    path: Assets/_Game/_Scenes/14_Level1 Jungle.unity
+    guid: 794cb11e65c804547bd5bf08785504f6
+  - enabled: 1
+    path: Assets/_Game/_Scenes/15_Level2 Jungle.unity
+    guid: 26312a85f4a20644fb56e8f79926e866
+  - enabled: 1
+    path: Assets/_Game/_Scenes/16_Level3 Jungle.unity
+    guid: accddee1eb788944fbd64f194cfd9def
+  - enabled: 1
+    path: Assets/_Game/_Scenes/17_Level4 Jungle.unity
+    guid: 380a5e4b677ff954ea2f9a218cc2eb3c
   m_configObjects: {}

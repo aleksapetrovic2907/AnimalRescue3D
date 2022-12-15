@@ -292,6 +292,7 @@ MonoBehaviour:
   scaleOfNextLevel: 1.5
   animalsRescued: 0
   totalAnimals: 160
+  isTransitioningLevel: 0
 --- !u!1 &4671319339445424183
 GameObject:
   m_ObjectHideFlags: 0
